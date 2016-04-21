@@ -7,8 +7,15 @@
     </url>
     
     <url>
+        <loc>http://yoursite.com/categories/index.html</loc>
+        <lastmod>2016-04-21T01:01:35.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>http://yoursite.com/tags/index.html</loc>
-        <lastmod>2016-04-20T15:26:41.000Z</lastmod>
+        <lastmod>2016-04-21T01:01:03.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -16,13 +23,6 @@
     <url>
         <loc>http://yoursite.com/about/index.html</loc>
         <lastmod>2016-04-20T15:25:48.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>http://yoursite.com/categories/index.html</loc>
-        <lastmod>2016-04-20T15:24:36.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
