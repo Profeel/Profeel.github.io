@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="scrapy,python,error," />
 
 
 
@@ -82,16 +82,25 @@
 
 
 
-<meta name="description" content="测试！而已！！请忽略！！！">
+<meta name="description" content="问题：    exceptions.TypeError: &amp;#39;Rule&amp;#39; object is not iterable
+原因：    123rules =(       Rule(SgmlLinkExtractor(allow = ()) ,callback = &apos;parse_item&apos;)       )
+不是可以迭代的对象
+修改为：    1rules =(Rule(SgmlLin">
 <meta property="og:type" content="article">
-<meta property="og:title" content="测试！">
-<meta property="og:url" content="http://yoursite.com/2016/04/21/测试！/index.html">
+<meta property="og:title" content="Rule object is not iterable">
+<meta property="og:url" content="http://yoursite.com/2016/04/22/iterable/index.html">
 <meta property="og:site_name" content="Profeel">
-<meta property="og:description" content="测试！而已！！请忽略！！！">
-<meta property="og:updated_time" content="2016-04-21T08:33:08.000Z">
+<meta property="og:description" content="问题：    exceptions.TypeError: &amp;#39;Rule&amp;#39; object is not iterable
+原因：    123rules =(       Rule(SgmlLinkExtractor(allow = ()) ,callback = &apos;parse_item&apos;)       )
+不是可以迭代的对象
+修改为：    1rules =(Rule(SgmlLin">
+<meta property="og:updated_time" content="2016-04-22T02:50:05.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="测试！">
-<meta name="twitter:description" content="测试！而已！！请忽略！！！">
+<meta name="twitter:title" content="Rule object is not iterable">
+<meta name="twitter:description" content="问题：    exceptions.TypeError: &amp;#39;Rule&amp;#39; object is not iterable
+原因：    123rules =(       Rule(SgmlLinkExtractor(allow = ()) ,callback = &apos;parse_item&apos;)       )
+不是可以迭代的对象
+修改为：    1rules =(Rule(SgmlLin">
 
 
 
@@ -109,7 +118,7 @@
   };
 </script>
 
-  <title> 测试！ | Profeel </title>
+  <title> Rule object is not iterable | Profeel </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -268,7 +277,7 @@
             
             
               
-                测试！
+                Rule object is not iterable
               
             
           </h1>
@@ -280,8 +289,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-21T16:32:50+08:00" content="2016-04-21">
-              2016-04-21
+            <time itemprop="dateCreated" datetime="2016-04-22T08:52:11+08:00" content="2016-04-22">
+              2016-04-22
             </time>
           </span>
 
@@ -291,8 +300,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/04/21/测试！/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/21/测试！/" itemprop="commentsCount"></span>
+                <a href="/2016/04/22/iterable/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/22/iterable/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -302,7 +311,7 @@
 
           
           
-             <span id="/2016/04/21/测试！/" class="leancloud_visitors" data-flag-title="测试！">
+             <span id="/2016/04/22/iterable/" class="leancloud_visitors" data-flag-title="Rule object is not iterable">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -324,7 +333,10 @@
       
 
       
-        <p>测试！而已！！<br>请忽略！！！</p>
+        <p>问题：<br>    <code>exceptions.TypeError: &#39;Rule&#39; object is not iterable</code></p>
+<p>原因：<br>    <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rules =(</span><br><span class="line">       Rule(SgmlLinkExtractor(allow = ()) ,callback = <span class="string">'parse_item'</span>)</span><br><span class="line">       )</span><br></pre></td></tr></table></figure></p>
+<pre><code>不是可以迭代的对象
+</code></pre><p>修改为：<br>    <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rules =(Rule(SgmlLinkExtractor(allow = ()) ,callback = <span class="string">'parse_item'</span>),)</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -364,17 +376,31 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/scrapy/" rel="tag">#scrapy</a>
+          
+            <a href="/tags/python/" rel="tag">#python</a>
+          
+            <a href="/tags/error/" rel="tag">#error</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/04/21/测试！/" rel="next" title="测试！">
+                <i class="fa fa-chevron-left"></i> 测试！
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/04/22/iterable/" rel="prev" title="Rule object is not iterable">
-                Rule object is not iterable <i class="fa fa-chevron-right"></i>
+              <a href="/2016/04/22/一些Python资料下载/" rel="prev" title="一些Python资料下载">
+                一些Python资料下载 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -404,8 +430,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/04/21/测试！/"
-           data-title="测试！" data-url="http://yoursite.com/2016/04/21/测试！/">
+      <div class="ds-thread" data-thread-key="2016/04/22/iterable/"
+           data-title="Rule object is not iterable" data-url="http://yoursite.com/2016/04/22/iterable/">
       </div>
     
   </div>
