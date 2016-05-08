@@ -171,9 +171,9 @@
     </summary>
     
     
-      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
-    
       <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
     
       <category term="error" scheme="http://yoursite.com/tags/error/"/>
     
