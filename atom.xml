@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-09T07:45:48.000Z</updated>
+  <updated>2016-05-10T00:58:21.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,92 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于ShadowSocks连接Dropbox设置</title>
+    <link href="http://yoursite.com/2016/05/10/%E5%85%B3%E4%BA%8EShadowSocks%E8%BF%9E%E6%8E%A5Dropbox%E8%AE%BE%E7%BD%AE/"/>
+    <id>http://yoursite.com/2016/05/10/关于ShadowSocks连接Dropbox设置/</id>
+    <published>2016-05-10T00:51:24.000Z</published>
+    <updated>2016-05-10T00:58:21.000Z</updated>
+    
+    <content type="html">&lt;p&gt;关于连接Dropbox，因为已经开启了ShadowSocks，但是Dropbox还是没有连接上，Dropbox官网是可以上的，说明连接没有问题，应该是客户端代理的问题。&lt;br&gt;应该把客户端的代理设置为本地代理，ShadowSocks连接使用全局&lt;br&gt;如下配置：&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/hexo2016-05-10%20at%20%E4%B8%8A%E5%8D%888.53.jpeg&quot; alt=&quot;配置信息&quot;&gt;&lt;/p&gt;
+&lt;p&gt;配置完成之后，重启Dropbox客户端即可&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;关于连接Dropbox，因为已经开启了ShadowSocks，但是Dropbox还是没有连接上，Dropbox官网是可以上的，说明连接没有问题，应该是客户端代理的问题。&lt;br&gt;应该把客户端的代理设置为本地代理，ShadowSocks连接使用全局&lt;br&gt;如下配置：&lt;br&gt;&lt;i
+    
+    </summary>
+    
+    
+      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
+    
+      <category term="dropbox" scheme="http://yoursite.com/tags/dropbox/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>scrapy抓取知乎话题下的子话题的url</title>
+    <link href="http://yoursite.com/2016/05/09/scrapy%E6%8A%93%E5%8F%96%E7%9F%A5%E4%B9%8E%E8%AF%9D%E9%A2%98%E4%B8%8B%E7%9A%84%E5%AD%90%E8%AF%9D%E9%A2%98%E7%9A%84url/"/>
+    <id>http://yoursite.com/2016/05/09/scrapy抓取知乎话题下的子话题的url/</id>
+    <published>2016-05-09T15:38:01.000Z</published>
+    <updated>2016-05-09T15:38:32.000Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Atom好用插件推荐</title>
+    <link href="http://yoursite.com/2016/05/09/Atom%E6%8F%92%E4%BB%B6/"/>
+    <id>http://yoursite.com/2016/05/09/Atom插件/</id>
+    <published>2016-05-09T08:33:18.000Z</published>
+    <updated>2016-05-09T15:38:14.000Z</updated>
+    
+    <content type="html">&lt;p&gt;atom好用的插件推荐：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. atom-prettify
+作用：让html更好地显示
+安装：apm install atom-prettify
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;atom好用的插件推荐：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. atom-prettify
+作用：让html更好地显示
+安装：apm install atom-prettify
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+    
+      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pycharm怎么用</title>
+    <link href="http://yoursite.com/2016/05/09/Pycharm%E6%80%8E%E4%B9%88%E7%94%A8/"/>
+    <id>http://yoursite.com/2016/05/09/Pycharm怎么用/</id>
+    <published>2016-05-09T08:15:35.000Z</published>
+    <updated>2016-05-09T08:15:35.000Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>scrapy 在不同的抓取级别的Request之间传递参数的办法</title>
