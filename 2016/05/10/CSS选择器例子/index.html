@@ -110,8 +110,8 @@ response.xpath(‘//title/text()’)[]CSS:response.css(‘title::text’)[]
 2. CSS选取节点下面的一个节点
 ‘’’      West Hampstead, London
 ‘’’response.css(‘span[itemtype=”http://schema.org/Place“] &amp;">
-<meta property="og:image" content="http://yoursite.com/images/2016-05-10/1.jpeg">
-<meta property="og:updated_time" content="2016-05-10T07:12:47.000Z">
+<meta property="og:image" content="http://yoursite.com/imgs/2016-05-10/1.jpeg">
+<meta property="og:updated_time" content="2016-05-10T07:16:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS选择器例子">
 <meta name="twitter:description" content="1. 选择文字部分
@@ -126,7 +126,7 @@ response.xpath(‘//title/text()’)[]CSS:response.css(‘title::text’)[]
 2. CSS选取节点下面的一个节点
 ‘’’      West Hampstead, London
 ‘’’response.css(‘span[itemtype=”http://schema.org/Place“] &amp;">
-<meta name="twitter:image" content="http://yoursite.com/images/2016-05-10/1.jpeg">
+<meta name="twitter:image" content="http://yoursite.com/imgs/2016-05-10/1.jpeg">
 
 
 
@@ -385,7 +385,7 @@ response.xpath(‘//title/text()’)[]CSS:response.css(‘title::text’)[]
 <pre><code>2. CSS选取节点下面的一个节点
 </code></pre><p>‘’’<br><span itemscope="" itemtype="http://schema.org/Place"><br>      <span>West Hampstead, London</span></span></p>
 <p>‘’’<br>response.css(‘span[itemtype=”<a href="http://schema.org/Place" target="_blank" rel="external">http://schema.org/Place</a>“] &gt; span::text’).extract()</p>
-<p>参考：<br><img src="/images/2016-05-10/1.jpeg" alt="css例子"></p>
+<p>参考：<br><img src="/imgs/2016-05-10/1.jpeg" alt="css例子"></p>
 <pre><code>3. 选取节点的某一个属性
 response.css(&apos;img[itemprop=image]::attr(scr)&apos;).extract()
 
