@@ -23,13 +23,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/scrapy/</loc>
-        <lastmod>2016-05-09T15:38:32.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/tags/tools/</loc>
         <lastmod>2016-05-10T00:58:21.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -39,6 +32,20 @@
     <url>
         <loc>http://yoursite.com/tags/dropbox/</loc>
         <lastmod>2016-05-10T00:58:21.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/scrapy/</loc>
+        <lastmod>2016-05-10T07:12:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/css-selector/</loc>
+        <lastmod>2016-05-10T07:12:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

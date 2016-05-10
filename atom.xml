@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-10T00:58:21.000Z</updated>
+  <updated>2016-05-10T07:12:47.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS选择器例子</title>
+    <link href="http://yoursite.com/2016/05/10/CSS%E9%80%89%E6%8B%A9%E5%99%A8%E4%BE%8B%E5%AD%90/"/>
+    <id>http://yoursite.com/2016/05/10/CSS选择器例子/</id>
+    <published>2016-05-10T07:08:42.000Z</published>
+    <updated>2016-05-10T07:12:47.000Z</updated>
+    
+    <content type="html">&lt;pre&gt;&lt;code&gt;1. 选择文字部分
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;XPATH:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;response.xpath(‘//title/text()’)&lt;br&gt;[&lt;selector (text)=&quot;&quot; xpath=&quot;//title/text()&quot;&gt;]&lt;br&gt;CSS:&lt;br&gt;response.css(‘title::text’)&lt;br&gt;[&lt;selector (text)=&quot;&quot; xpath=&quot;//title/text()&quot;&gt;]&lt;/selector&gt;&lt;/selector&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;2. CSS选取节点下面的一个节点
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;‘’’&lt;br&gt;&lt;span itemscope=&quot;&quot; itemtype=&quot;http://schema.org/Place&quot;&gt;&lt;br&gt;      &lt;span&gt;West Hampstead, London&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;‘’’&lt;br&gt;response.css(‘span[itemtype=”&lt;a href=&quot;http://schema.org/Place&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://schema.org/Place&lt;/a&gt;“] &amp;gt; span::text’).extract()&lt;/p&gt;
+&lt;p&gt;参考：&lt;br&gt;&lt;img src=&quot;/images/2016-05-10/1.jpeg&quot; alt=&quot;css例子&quot;&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;3. 选取节点的某一个属性
+response.css(&amp;apos;img[itemprop=image]::attr(scr)&amp;apos;).extract()
+
+4. 选取节点的文字部分
+response.css(&amp;quot;.question_link::text&amp;quot;).extract()
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;1. 选择文字部分
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;XPATH:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;response.xpath(‘//title/text()’)&lt;br&gt;[&lt;selector (te
+    
+    </summary>
+    
+    
+      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
+    
+      <category term="css selector" scheme="http://yoursite.com/tags/css-selector/"/>
+    
+  </entry>
   
   <entry>
     <title>关于ShadowSocks连接Dropbox设置</title>
