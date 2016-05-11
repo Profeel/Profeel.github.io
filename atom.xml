@@ -114,12 +114,12 @@
     <link href="http://yoursite.com/2016/05/10/hexo%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
     <id>http://yoursite.com/2016/05/10/hexo相关操作/</id>
     <published>2016-05-10T07:18:21.000Z</published>
-    <updated>2016-05-10T07:21:06.000Z</updated>
+    <updated>2016-05-11T08:01:46.000Z</updated>
     
     <content type="html">&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;markdown中插入图片的图片路径&lt;br&gt;在source中建立文件夹imgs，然后路径直接写/imgs/path/name.jpg 就可以了&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;hexo命令&lt;br&gt;hexo g -&amp;gt;生成页面&lt;br&gt;hexo d -&amp;gt;deploy到服务器&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;hexo命令&lt;br&gt;hexo g -&amp;gt;生成页面&lt;br&gt;hexo d -&amp;gt;deploy到服务器&lt;br&gt;hexo d -g&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 </content>
