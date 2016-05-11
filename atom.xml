@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-10T07:16:31.000Z</updated>
+  <updated>2016-05-11T00:56:41.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,89 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>晚睡强迫症患者</title>
+    <link href="http://yoursite.com/2016/05/11/%E6%99%9A%E7%9D%A1%E5%BC%BA%E8%BF%AB%E7%97%87%E6%82%A3%E8%80%85/"/>
+    <id>http://yoursite.com/2016/05/11/晚睡强迫症患者/</id>
+    <published>2016-05-11T00:51:29.000Z</published>
+    <updated>2016-05-11T00:56:41.000Z</updated>
+    
+    <content type="html">&lt;p&gt;最近晚睡成了一种习惯，以前偶尔失眠只是到1点2点，现在动不动就到了4点5点，甚至6点。我觉得我需要正视这个问题了，已经快持续两个月了，需要强烈地改变现状。&lt;br&gt;前期是因为失恋导致的，现在成了一种习惯。&lt;br&gt;现在制订改善方案：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;晚上22点，关闭wifi，关闭手机。&lt;/li&gt;
+&lt;li&gt;睡前打坐30分钟。&lt;/li&gt;
+&lt;li&gt;每天晚上去健身房跑步1小时，慢跑出汗即可，洗澡。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;暂时就这么打算吧。之后第二天早上反馈前一天的执行情况，坚持，改善生活。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近晚睡成了一种习惯，以前偶尔失眠只是到1点2点，现在动不动就到了4点5点，甚至6点。我觉得我需要正视这个问题了，已经快持续两个月了，需要强烈地改变现状。&lt;br&gt;前期是因为失恋导致的，现在成了一种习惯。&lt;br&gt;现在制订改善方案：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;晚上22点，关闭w
+    
+    </summary>
+    
+    
+      <category term="日记" scheme="http://yoursite.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>XPath选择器相关</title>
+    <link href="http://yoursite.com/2016/05/10/XPath%E9%80%89%E6%8B%A9%E5%99%A8%E7%9B%B8%E5%85%B3/"/>
+    <id>http://yoursite.com/2016/05/10/XPath选择器相关/</id>
+    <published>2016-05-10T07:29:43.000Z</published>
+    <updated>2016-05-10T07:30:47.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;strong&gt;    1. 选择某一个属性&lt;/strong&gt;&lt;br&gt;&lt;code&gt;next_selector=response.xpath(&amp;#39;//*[contains(@class,&amp;quot;zm-invite-pager&amp;quot;)]/span/a/@href&amp;#39;).extract()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;对于某一个class拥有两部分的时候，同样的方法：&lt;br&gt;&lt;code&gt;hash_id = &amp;#39;&amp;#39;.join(selector.xpath(&amp;#39;//div[@class=&amp;quot;zm-profile-header-op-btns clearfix&amp;quot;]/button/@data-id&amp;#39;).extract())&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;参考：&lt;br&gt;&lt;a href=&quot;https://github.com/javachen/scrapy-zhihu-github/blob/master/zhihu/spiders/zhihu_user_spider.py&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/javachen/scrapy-zhihu-github/blob/master/zhihu/spiders/zhihu_user_spider.py&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;    1. 选择某一个属性&lt;/strong&gt;&lt;br&gt;&lt;code&gt;next_selector=response.xpath(&amp;#39;//*[contains(@class,&amp;quot;zm-invite-pager&amp;quot;)]/span/a/@href
+    
+    </summary>
+    
+    
+      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
+    
+      <category term="xpath" scheme="http://yoursite.com/tags/xpath/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo相关操作</title>
+    <link href="http://yoursite.com/2016/05/10/hexo%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
+    <id>http://yoursite.com/2016/05/10/hexo相关操作/</id>
+    <published>2016-05-10T07:18:21.000Z</published>
+    <updated>2016-05-10T07:21:06.000Z</updated>
+    
+    <content type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;markdown中插入图片的图片路径&lt;br&gt;在source中建立文件夹imgs，然后路径直接写/imgs/path/name.jpg 就可以了&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;hexo命令&lt;br&gt;hexo g -&amp;gt;生成页面&lt;br&gt;hexo d -&amp;gt;deploy到服务器&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;markdown中插入图片的图片路径&lt;br&gt;在source中建立文件夹imgs，然后路径直接写/imgs/path/name.jpg 就可以了&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;hexo命令&lt;br&gt;hexo g -&amp;gt;生成页面&lt;br&gt;hexo d -&amp;
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS选择器例子</title>
