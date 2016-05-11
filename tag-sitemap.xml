@@ -9,13 +9,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/error/</loc>
-        <lastmod>2016-05-04T07:33:33.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/tags/tools/</loc>
         <lastmod>2016-05-10T00:58:21.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -44,13 +37,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/xpath/</loc>
-        <lastmod>2016-05-10T07:30:47.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/tags/scrapy/</loc>
         <lastmod>2016-05-10T07:30:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -58,8 +44,22 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/tags/xpath/</loc>
+        <lastmod>2016-05-10T07:30:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://yoursite.com/tags/%E6%97%A5%E8%AE%B0/</loc>
-        <lastmod>2016-05-11T01:03:17.000Z</lastmod>
+        <lastmod>2016-05-11T06:24:53.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/error/</loc>
+        <lastmod>2016-05-11T07:49:27.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
