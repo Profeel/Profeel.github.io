@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-11T14:43:56.000Z</updated>
+  <updated>2016-05-12T07:43:00.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,103 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python Or Scrapy之预先善其事必先利其器</title>
+    <link href="http://yoursite.com/2016/05/12/Python-Or-Scrapy%E4%B9%8B%E9%A2%84%E5%85%88%E5%96%84%E5%85%B6%E4%BA%8B%E5%BF%85%E5%85%88%E5%88%A9%E5%85%B6%E5%99%A8/"/>
+    <id>http://yoursite.com/2016/05/12/Python-Or-Scrapy之预先善其事必先利其器/</id>
+    <published>2016-05-12T07:37:42.000Z</published>
+    <updated>2016-05-12T07:43:00.000Z</updated>
+    
+    <content type="html">&lt;ol&gt;
+&lt;li&gt;编译器：&lt;ul&gt;
+&lt;li&gt;PyCharm5&lt;/li&gt;
+&lt;li&gt;ipython&lt;/li&gt;
+&lt;li&gt;jupyter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Scrapy插件：&lt;ul&gt;
+&lt;li&gt;XPath Helper （Chrome插件）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;翻墙利器：&lt;ul&gt;
+&lt;li&gt;ShadowSocks，年费大概100￥/year 评价：稳定、不限流量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;编译器：&lt;ul&gt;
+&lt;li&gt;PyCharm5&lt;/li&gt;
+&lt;li&gt;ipython&lt;/li&gt;
+&lt;li&gt;jupyter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Scrapy插件：&lt;ul&gt;
+&lt;li&gt;XPath Helper （Chrome插件）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;
+    
+    </summary>
+    
+    
+      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
+    
+      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scrapy ItemLoader返回的是列表如何选择第一个</title>
+    <link href="http://yoursite.com/2016/05/12/Scrapy-ItemLoader%E8%BF%94%E5%9B%9E%E7%9A%84%E6%98%AF%E5%88%97%E8%A1%A8%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E7%AC%AC%E4%B8%80%E4%B8%AA/"/>
+    <id>http://yoursite.com/2016/05/12/Scrapy-ItemLoader返回的是列表如何选择第一个/</id>
+    <published>2016-05-12T03:46:26.000Z</published>
+    <updated>2016-05-12T03:51:25.000Z</updated>
+    
+    <content type="html">&lt;p&gt;在items.py中加入：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;from scrapy.loader.processors import TakeFirst&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;......&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	# 修改为以下内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    followees = Field(output_processor=TakeFirst())&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;其他的不用改变，在spiders中的代码不需要改变&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;待解决：问题是第二个怎么选以及之后的几个？&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在items.py中加入：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;
+    
+    </summary>
+    
+    
+      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scrapy ItemLoader的使用</title>
+    <link href="http://yoursite.com/2016/05/12/Scrapy-ItemLoader%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2016/05/12/Scrapy-ItemLoader的使用/</id>
+    <published>2016-05-12T00:58:22.000Z</published>
+    <updated>2016-05-12T03:46:29.000Z</updated>
+    
+    <content type="html">&lt;p&gt;通过ItemLoader能更加简洁地表达以及操作&lt;br&gt;下面介绍一下使用方法：&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;通过ItemLoader能更加简洁地表达以及操作&lt;br&gt;下面介绍一下使用方法：&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
+    
+  </entry>
   
   <entry>
     <title>《超级时间整理书》笔记</title>
@@ -196,13 +293,42 @@
     <link href="http://yoursite.com/2016/05/10/hexo%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
     <id>http://yoursite.com/2016/05/10/hexo相关操作/</id>
     <published>2016-05-10T07:18:21.000Z</published>
-    <updated>2016-05-11T08:03:44.000Z</updated>
+    <updated>2016-05-12T00:52:33.000Z</updated>
     
     <content type="html">&lt;p&gt;1.Markdown相关操作 &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;markdown中插入图片的图片路径&lt;br&gt;在source中建立文件夹imgs，然后路径直接写/imgs/path/name.jpg 就可以了&lt;br&gt;&lt;code&gt;![图片标题](图片地址)&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;插入链接&lt;br&gt;&lt;code&gt;[链接标题](链接)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;插入表格&lt;/li&gt;
 &lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;| Tables        | Are           | Cool  |  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| ------------- |-------------- | ------|  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| col 3 is      | right-aligned | $1600 |  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| col 2 is      | centered      |   $12 | &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| zebra stripes | are neat      |    $1 |&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;效果如下：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Tables&lt;/th&gt;
+&lt;th&gt;Are&lt;/th&gt;
+&lt;th&gt;Cool&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;col 3 is&lt;/td&gt;
+&lt;td&gt;right-aligned&lt;/td&gt;
+&lt;td&gt;$1600&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;col 2 is&lt;/td&gt;
+&lt;td&gt;centered&lt;/td&gt;
+&lt;td&gt;$12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;zebra stripes&lt;/td&gt;
+&lt;td&gt;are neat&lt;/td&gt;
+&lt;td&gt;$1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;ol&gt;
 &lt;li&gt;hexo命令&lt;br&gt;hexo g -&amp;gt;生成页面&lt;br&gt;hexo d -&amp;gt;deploy到服务器&lt;br&gt;hexo d -g -&amp;gt;生成页面的同时部署到服务器&lt;/li&gt;
 &lt;/ol&gt;
