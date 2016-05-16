@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-12T07:43:00.000Z</updated>
+  <updated>2016-05-12T15:20:22.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,25 +16,55 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Scrapy 爬虫中的一些技巧</title>
+    <link href="http://yoursite.com/2016/05/12/Scrapy-%E7%88%AC%E8%99%AB%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%8A%80%E5%B7%A7/"/>
+    <id>http://yoursite.com/2016/05/12/Scrapy-爬虫中的一些技巧/</id>
+    <published>2016-05-12T15:18:34.000Z</published>
+    <updated>2016-05-12T15:20:22.000Z</updated>
+    
+    <content type="html">&lt;ol&gt;
+&lt;li&gt;由于隐私设置的缘故，有些用户可能没有显示一些数据，故针对某些用户 xpath 表达式可能会抛出一些异常，如下面代码获取用户的名称：&lt;br&gt;&lt;code&gt;user[&amp;#39;nickname&amp;#39;] = selector.xpath(&amp;quot;//div[@class=&amp;#39;title-section ellipsis&amp;#39;]/a[@class=&amp;#39;name&amp;#39;]/text()&amp;quot;).extract()[0]&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;你可以将上面代码修改如下，以避免出现一个异常,避免采集的为空值所带来的异常：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;user[&amp;#39;nickname&amp;#39;] = &amp;#39;&amp;#39;.join(selector.xpath(&amp;quot;//div[@class=&amp;#39;title-section ellipsis&amp;#39;]/a[@class=&amp;#39;name&amp;#39;]/text()&amp;quot;).extract())&lt;/code&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;由于隐私设置的缘故，有些用户可能没有显示一些数据，故针对某些用户 xpath 表达式可能会抛出一些异常，如下面代码获取用户的名称：&lt;br&gt;&lt;code&gt;user[&amp;#39;nickname&amp;#39;] = selector.xpath(&amp;quot;//div[@c
+    
+    </summary>
+    
+    
+      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python Or Scrapy之预先善其事必先利其器</title>
     <link href="http://yoursite.com/2016/05/12/Python-Or-Scrapy%E4%B9%8B%E9%A2%84%E5%85%88%E5%96%84%E5%85%B6%E4%BA%8B%E5%BF%85%E5%85%88%E5%88%A9%E5%85%B6%E5%99%A8/"/>
     <id>http://yoursite.com/2016/05/12/Python-Or-Scrapy之预先善其事必先利其器/</id>
     <published>2016-05-12T07:37:42.000Z</published>
-    <updated>2016-05-12T07:43:00.000Z</updated>
+    <updated>2016-05-13T02:36:42.000Z</updated>
     
     <content type="html">&lt;ol&gt;
-&lt;li&gt;编译器：&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;编译器：&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;PyCharm5&lt;/li&gt;
 &lt;li&gt;ipython&lt;/li&gt;
 &lt;li&gt;jupyter&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Scrapy插件：&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Scrapy插件：&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;XPath Helper （Chrome插件）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;翻墙利器：&lt;ul&gt;
-&lt;li&gt;ShadowSocks，年费大概100￥/year 评价：稳定、不限流量&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;翻墙利器：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://portal.shadowsocks.com/aff.php?aff=6996&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ShadowSocks&lt;/a&gt;，年费大概100元/year 日均0.3元&lt;br&gt;&lt;strong&gt;评价：稳定、不限流量、支持支付宝付款 &lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Lantern （自行google）&lt;br&gt;评价： Mac、Android免费，网速不快，流量不限，简单上网可用&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -43,23 +73,23 @@
     <summary type="html">
     
       &lt;ol&gt;
-&lt;li&gt;编译器：&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;编译器：&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;PyCharm5&lt;/li&gt;
 &lt;li&gt;ipython&lt;/li&gt;
 &lt;li&gt;jupyter&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Scrapy插件：&lt;ul&gt;
-&lt;li&gt;XPath Helper （Chrome插件）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;
+&lt;li&gt;&lt;p&gt;Scrapy插件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;XPath Helper （Chrome
     
     </summary>
     
     
-      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
-    
       <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
+    
+      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
     
   </entry>
   
@@ -217,7 +247,7 @@
     <link href="http://yoursite.com/2016/05/11/%E6%99%9A%E7%9D%A1%E5%BC%BA%E8%BF%AB%E7%97%87%E6%82%A3%E8%80%85/"/>
     <id>http://yoursite.com/2016/05/11/晚睡强迫症患者/</id>
     <published>2016-05-11T00:51:29.000Z</published>
-    <updated>2016-05-12T00:38:58.000Z</updated>
+    <updated>2016-05-16T00:37:08.000Z</updated>
     
     <content type="html">&lt;p&gt;最近晚睡成了一种习惯，以前偶尔失眠只是到1点2点，现在动不动就到了4点5点，甚至6点。我觉得我需要正视这个问题了，已经快持续两个月了，需要强烈地改变现状。&lt;br&gt;前期是因为失恋导致的，现在成了一种习惯。&lt;br&gt;现在制订改善方案：&lt;/p&gt;
 &lt;ol&gt;
@@ -238,6 +268,7 @@
 &lt;th&gt;日期&lt;/th&gt;
 &lt;th&gt;执行&lt;/th&gt;
 &lt;th&gt;完成度&lt;/th&gt;
+&lt;th&gt;反思&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
@@ -245,6 +276,25 @@
 &lt;td&gt;2016-05-11&lt;/td&gt;
 &lt;td&gt;√中午饭后散步 √7分钟锻炼 √11点睡觉 √没有失眠&lt;/td&gt;
 &lt;td&gt;80%&lt;/td&gt;
+&lt;td&gt;饭后半小时以上散步+出汗有效果&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2016-05-12&lt;/td&gt;
+&lt;td&gt;√中午饭后散步 √7分钟锻炼 ×11点睡觉 ×没有失眠 失眠到1am（40%）&lt;/td&gt;
+&lt;td&gt;60%&lt;/td&gt;
+&lt;td&gt;坚持散步，睡前别玩手机&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2016-05-13&lt;/td&gt;
+&lt;td&gt;×中午饭后散步 √7分钟锻炼 ×11点睡觉 ×没有失眠 失眠到3am（20%）&lt;/td&gt;
+&lt;td&gt;20%&lt;/td&gt;
+&lt;td&gt;周末也不能懈怠！！！&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2016-05-14&lt;/td&gt;
+&lt;td&gt;×中午饭后散步 √7分钟锻炼 ×11点睡觉 ×没有失眠 失眠到3am（20%）&lt;/td&gt;
+&lt;td&gt;20%&lt;/td&gt;
+&lt;td&gt;周末也不能懈怠！！！&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -623,35 +673,6 @@
     
     
       <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Rule object is not iterable</title>
-    <link href="http://yoursite.com/2016/04/22/iterable/"/>
-    <id>http://yoursite.com/2016/04/22/iterable/</id>
-    <published>2016-04-22T00:52:11.000Z</published>
-    <updated>2016-04-22T02:50:05.000Z</updated>
-    
-    <content type="html">&lt;p&gt;问题：&lt;br&gt;    &lt;code&gt;exceptions.TypeError: &amp;#39;Rule&amp;#39; object is not iterable&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;原因：&lt;br&gt;    &lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;rules =(&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;       Rule(SgmlLinkExtractor(allow = ()) ,callback = &lt;span class=&quot;string&quot;&gt;&#39;parse_item&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;       )&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;不是可以迭代的对象
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;修改为：&lt;br&gt;    &lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;rules =(Rule(SgmlLinkExtractor(allow = ()) ,callback = &lt;span class=&quot;string&quot;&gt;&#39;parse_item&#39;&lt;/span&gt;),)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;问题：&lt;br&gt;    &lt;code&gt;exceptions.TypeError: &amp;#39;Rule&amp;#39; object is not iterable&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;原因：&lt;br&gt;    &lt;figure class=&quot;highlight python&quot;&gt;&lt;t
-    
-    </summary>
-    
-    
-      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
-    
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-      <category term="error" scheme="http://yoursite.com/tags/error/"/>
     
   </entry>
   
