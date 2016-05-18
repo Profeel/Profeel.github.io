@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-12T15:20:22.000Z</updated>
+  <updated>2016-05-18T02:39:03.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,98 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何找到Python的site-packages路径</title>
+    <link href="http://yoursite.com/2016/05/18/%E5%A6%82%E4%BD%95%E6%89%BE%E5%88%B0Python%E7%9A%84site-packages%E8%B7%AF%E5%BE%84/"/>
+    <id>http://yoursite.com/2016/05/18/如何找到Python的site-packages路径/</id>
+    <published>2016-05-18T02:37:40.000Z</published>
+    <updated>2016-05-18T02:39:03.000Z</updated>
+    
+    <content type="html">&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;In [22]: import sys&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;In [23]: print sys.path&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[&amp;apos;&amp;apos;, &amp;apos;/usr/local/bin&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/distribute-0.6.28-py2.7.egg&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/web.py-0.37-py2.7.egg&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/psutil-2.0.0-py2.7-macosx-10.11-intel.egg&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/pinax_blog-4.3.0-py2.7.egg&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/Pygments-2.1-py2.7.egg&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/MySQL_python-1.2.3-py2.7-macosx-10.11-intel.egg&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/Scrapy-1.0.4-py2.7.egg&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/service_identity-14.0.0-py2.7.egg&amp;apos;, &amp;apos;/Users/wangqi/Documents/workspace/tests/zhihu/src/pyv8&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python27.zip&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-darwin&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac/lib-scriptpackages&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-old&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-dynload&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/PyObjC&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/PIL&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/IPython/extensions&amp;apos;, &amp;apos;/Users/wangqi/.ipython&amp;apos;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git相关操作</title>
+    <link href="http://yoursite.com/2016/05/16/git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
+    <id>http://yoursite.com/2016/05/16/git相关操作/</id>
+    <published>2016-05-16T03:35:23.000Z</published>
+    <updated>2016-05-16T03:47:58.000Z</updated>
+    
+    <content type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git init&lt;/code&gt;&lt;br&gt;这个命令会在当前目录下创建一个.git文件夹。 不要删除或者修改这个文件夹。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git add .&lt;/code&gt;&lt;br&gt;将当前目录下的文件添加到git仓库&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git commit -m &amp;quot;comment&amp;quot;&lt;/code&gt;&lt;br&gt;添加操作评论&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git remote add origin github#address&lt;/code&gt;&lt;br&gt;将本地仓库添加到远程仓库&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git pull origin master&lt;/code&gt;&lt;br&gt;将本地和master的改变合并到分支&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git push origin master&lt;/code&gt;&lt;br&gt;将本地仓库提交到远程分支master&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git init&lt;/code&gt;&lt;br&gt;这个命令会在当前目录下创建一个.git文件夹。 不要删除或者修改这个文件夹。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git add .&lt;/code&gt;&lt;br&gt;将当前目录下的文件添加到git仓库&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于yield函数的理解</title>
+    <link href="http://yoursite.com/2016/05/16/%E5%85%B3%E4%BA%8Eyield%E5%87%BD%E6%95%B0%E7%9A%84%E7%90%86%E8%A7%A3/"/>
+    <id>http://yoursite.com/2016/05/16/关于yield函数的理解/</id>
+    <published>2016-05-16T01:18:46.000Z</published>
+    <updated>2016-05-16T01:22:08.000Z</updated>
+    
+    <content type="html">&lt;p&gt;关于yield函数，&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;为了精通 yield ,你必须要理解：当你调用这个函数的时候，函数内部的代码并不立马执行 ，这个函数只是返回一个生成器对象，这有点蹊跷不是吗。&lt;br&gt;那么，函数内的代码什么时候执行呢？当你使用for进行迭代的时候&lt;/p&gt;
+&lt;p&gt;现在到了关键点了！&lt;/p&gt;
+&lt;p&gt;第一次迭代中你的函数会执行，从开始到达 yield 关键字，然后返回 yield 后的值作为第一次迭代的返回值. 然后，每次执行这个函数都会继续执行你在函数内部定义的那个循环的下一次，再返回那个值，直到没有可以返回的。&lt;/p&gt;
+&lt;p&gt;如果生成器内部没有定义 yield 关键字，那么这个生成器被认为成空的。这种情况可能因为是循环进行没了，或者是没有满足 if/else 条件。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;引用地址：&lt;a href=&quot;http://pyzh.readthedocs.io/en/latest/the-python-yield-keyword-explained.html#yield&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;3. (译)Python关键字yield的解释(stackoverflow)&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;关于yield函数，&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;为了精通 yield ,你必须要理解：当你调用这个函数的时候，函数内部的代码并不立马执行 ，这个函数只是返回一个生成器对象，这有点蹊跷不是吗。&lt;br&gt;那么，函数内的代码什么时候执行呢？当你使用for进行迭代的时候
+    
+    </summary>
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+      <category term="yield" scheme="http://yoursite.com/tags/yield/"/>
+    
+  </entry>
   
   <entry>
     <title>Scrapy 爬虫中的一些技巧</title>
@@ -87,9 +179,9 @@
     </summary>
     
     
-      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
-    
       <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
+    
+      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
     
   </entry>
   
@@ -247,7 +339,7 @@
     <link href="http://yoursite.com/2016/05/11/%E6%99%9A%E7%9D%A1%E5%BC%BA%E8%BF%AB%E7%97%87%E6%82%A3%E8%80%85/"/>
     <id>http://yoursite.com/2016/05/11/晚睡强迫症患者/</id>
     <published>2016-05-11T00:51:29.000Z</published>
-    <updated>2016-05-16T00:37:08.000Z</updated>
+    <updated>2016-05-18T00:20:37.000Z</updated>
     
     <content type="html">&lt;p&gt;最近晚睡成了一种习惯，以前偶尔失眠只是到1点2点，现在动不动就到了4点5点，甚至6点。我觉得我需要正视这个问题了，已经快持续两个月了，需要强烈地改变现状。&lt;br&gt;前期是因为失恋导致的，现在成了一种习惯。&lt;br&gt;现在制订改善方案：&lt;/p&gt;
 &lt;ol&gt;
@@ -296,8 +388,27 @@
 &lt;td&gt;20%&lt;/td&gt;
 &lt;td&gt;周末也不能懈怠！！！&lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2016-05-15&lt;/td&gt;
+&lt;td&gt;×中午饭后散步 √7分钟锻炼 ×11点睡觉 ×没有失眠 失眠到3am（20%）&lt;/td&gt;
+&lt;td&gt;20%&lt;/td&gt;
+&lt;td&gt;周末也不能懈怠！！！&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2016-05-16&lt;/td&gt;
+&lt;td&gt;×中午饭后散步 ×7分钟锻炼 ×11点睡觉 ×失眠到1点（60%）&lt;/td&gt;
+&lt;td&gt;60%&lt;/td&gt;
+&lt;td&gt;加班调整&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2016-05-17&lt;/td&gt;
+&lt;td&gt;×中午饭后散步 ×7分钟锻炼 ×11点睡觉 ×失眠到1点（60%）&lt;/td&gt;
+&lt;td&gt;60%&lt;/td&gt;
+&lt;td&gt;加班调整&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;p&gt;去看过医生了，医生建议运动最好是微微出汗，不要过度。&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -308,8 +419,12 @@
     
     </summary>
     
+      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
     
-      <category term="日记" scheme="http://yoursite.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+      <category term="失眠" scheme="http://yoursite.com/tags/%E5%A4%B1%E7%9C%A0/"/>
+    
+      <category term="晚睡" scheme="http://yoursite.com/tags/%E6%99%9A%E7%9D%A1/"/>
     
   </entry>
   
@@ -593,83 +708,6 @@
     </summary>
     
       <category term="error" scheme="http://yoursite.com/categories/error/"/>
-    
-    
-      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于scarpy ip的bug</title>
-    <link href="http://yoursite.com/2016/05/04/%E5%85%B3%E4%BA%8Escarpy-ip%E7%9A%84bug/"/>
-    <id>http://yoursite.com/2016/05/04/关于scarpy-ip的bug/</id>
-    <published>2016-05-04T07:09:47.000Z</published>
-    <updated>2016-05-04T07:33:33.000Z</updated>
-    
-    <content type="html">&lt;blockquote&gt;
-&lt;p&gt;先描述一下问题：在学习《Learning Scrapy》的过程中，根据ch03的代码，下载了Docker，然后Docker的地址为192.168.99.100，为了图方便，没有修改hosts的内容，在代码中，直接使用ip作为start urls，然后，无法爬取下一个页面，一直是以为是Rule写错了，修改Rule也无法验证，因为没有办法获取下一页的内容&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;起始的代码为：&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;allowed_domains = [&lt;span class=&quot;string&quot;&gt;&#39;192.168.99.100&#39;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;start_urls = [&lt;span class=&quot;string&quot;&gt;&#39;192.168.99.100:32768/properties/index_00000.html&#39;&lt;/span&gt;,]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;修改为：&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;allowed_domains = [&lt;span class=&quot;string&quot;&gt;&#39;web&#39;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;start_urls = [&lt;span class=&quot;string&quot;&gt;&#39;http://web:32768/properties/index_00000.html&#39;&lt;/span&gt;,]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这样就可以了，但是不知道原因，如果以后知道了，就再补上&lt;br&gt;补一个&lt;a href=&quot;http://stackoverflow.com/questions/37017741/why-it-cant-come-out-the-next-parse-about-scrapy-crawl/37020756#37020756&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;stackoverflow的问题链接&lt;/a&gt;，没人回答╮(╯▽╰)╭&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;先描述一下问题：在学习《Learning Scrapy》的过程中，根据ch03的代码，下载了Docker，然后Docker的地址为192.168.99.100，为了图方便，没有修改hosts的内容，在代码中，直接使用ip作为start urls，然
-    
-    </summary>
-    
-      <category term="error" scheme="http://yoursite.com/categories/error/"/>
-    
-    
-      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
-    
-      <category term="error" scheme="http://yoursite.com/tags/error/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>反思毕业3年</title>
-    <link href="http://yoursite.com/2016/05/03/%E5%8F%8D%E6%80%9D%E6%AF%95%E4%B8%9A3%E5%B9%B4/"/>
-    <id>http://yoursite.com/2016/05/03/反思毕业3年/</id>
-    <published>2016-05-03T06:57:56.000Z</published>
-    <updated>2016-05-03T07:02:17.000Z</updated>
-    
-    <content type="html">&lt;p&gt;  已经毕业3年，无可避讳。&lt;br&gt;  当前2年可以认为是一种尝试，在1年半的时候，好像必须趋于一种稳定，希望在一个地方安定下来，有固定的朋友，固定的社交圈。&lt;br&gt;  其他的都是一种尝试，工作很轻松，没有压力，但是也没有什么动力。在这种温水中，更希望去做一些创造性的东西。自学了很久的python，仍然没有什么进展，仅仅是14年自己爬虫了一些简单的网易彩票的数据，其他的便没有任何，而且当时的代码并没有任何可值得称赞的地方，即使是当时，都是觉得很不能辨认的。&lt;br&gt;  于今天，我觉得我想当浮躁，过于浮躁地活着，没有踏踏实实地活着。希望得到更多，却放弃了付出，舍不得付出，计较着一些鸡毛蒜皮的事情，很可悲。&lt;br&gt;  希望今后的每天都能脚踏实地地学习、生活。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;  已经毕业3年，无可避讳。&lt;br&gt;  当前2年可以认为是一种尝试，在1年半的时候，好像必须趋于一种稳定，希望在一个地方安定下来，有固定的朋友，固定的社交圈。&lt;br&gt;  其他的都是一种尝试，工作很轻松，没有压力，但是也没有什么动力。在这种温水中，更希望去做一些创造性的东西。
-    
-    </summary>
-    
-    
-      <category term="日记" scheme="http://yoursite.com/tags/%E6%97%A5%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Scrapy examples尝试</title>
-    <link href="http://yoursite.com/2016/04/22/Scrapy-examples%E5%B0%9D%E8%AF%95/"/>
-    <id>http://yoursite.com/2016/04/22/Scrapy-examples尝试/</id>
-    <published>2016-04-22T07:24:26.000Z</published>
-    <updated>2016-04-22T07:25:29.000Z</updated>
-    
-    <content type="html">&lt;p&gt;  因为最近在看scrapy，看的书有《Learning Scrapy》&lt;br&gt;  从Github上找了点例子来学习， 例子地址为：&lt;a href=&quot;https://github.com/geekan/scrapy-examples&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/geekan/scrapy-examples&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;  因为最近在看scrapy，看的书有《Learning Scrapy》&lt;br&gt;  从Github上找了点例子来学习， 例子地址为：&lt;a href=&quot;https://github.com/geekan/scrapy-examples&quot; target=&quot;_blank&quot; rel
-    
-    </summary>
     
     
       <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
