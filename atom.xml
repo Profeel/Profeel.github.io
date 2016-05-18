@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-18T02:39:03.000Z</updated>
+  <updated>2016-05-18T09:25:53.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Pycharm主题设置</title>
+    <link href="http://yoursite.com/2016/05/18/Pycharm%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE/"/>
+    <id>http://yoursite.com/2016/05/18/Pycharm主题设置/</id>
+    <published>2016-05-18T08:06:50.000Z</published>
+    <updated>2016-05-18T09:25:53.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Pycharm的主题设置会影响到代码效率，特别是相关的颜色设定，设置为自己喜欢的颜色，高亮代码，有助于编程。&lt;br&gt;Pycharm主题下载网站：&lt;a href=&quot;http://color-themes.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;color-themes&lt;/a&gt;&lt;br&gt;设置方法：&lt;br&gt;file-&amp;gt;imort settings-&amp;gt;themes file&lt;br&gt;重启Pycharm，在Pycharm-&amp;gt;Perference-&amp;gt;Editor -&amp;gt; Colors &amp;amp; Fonts -&amp;gt;theme&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;另外，注册Pycharm在 &lt;a href=&quot;http://idea.lanyus.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;lanyus&lt;/a&gt;网站点击获得注册码&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Pycharm的主题设置会影响到代码效率，特别是相关的颜色设定，设置为自己喜欢的颜色，高亮代码，有助于编程。&lt;br&gt;Pycharm主题下载网站：&lt;a href=&quot;http://color-themes.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;
+    
+    </summary>
+    
+    
+      <category term="Pycharm tools" scheme="http://yoursite.com/tags/Pycharm-tools/"/>
+    
+  </entry>
   
   <entry>
     <title>如何找到Python的site-packages路径</title>
@@ -684,30 +708,6 @@
 &lt;
     
     </summary>
-    
-    
-      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于scrapy没有跳转到下一个链接</title>
-    <link href="http://yoursite.com/2016/05/05/%E5%A6%82%E6%9E%9C%E4%B8%8D%E7%9F%A5%E9%81%93%E9%97%AE%E9%A2%98%E5%9C%A8%E5%93%AA%E9%87%8C%EF%BC%8C%E5%B0%B1%E5%8E%BB%E4%B8%8A%E4%B8%AA%E5%8E%95%E6%89%80%E5%90%A7%EF%BC%8C%E4%B9%9F%E8%AE%B8%E5%9B%9E%E6%9D%A5%E5%B0%B1%E7%9F%A5%E9%81%93%E4%BA%86/"/>
-    <id>http://yoursite.com/2016/05/05/如果不知道问题在哪里，就去上个厕所吧，也许回来就知道了/</id>
-    <published>2016-05-05T03:00:20.000Z</published>
-    <updated>2016-05-05T03:05:13.000Z</updated>
-    
-    <content type="html">&lt;p&gt;刚刚遇到一个奇怪的问题，代码应该是没有错误的&lt;br&gt;内容是这样的，准备在关于知乎的一个话题下，爬取所有问题的url保存到数据库中&lt;br&gt;但是，最后写了循环到yield scrapy.Request，但是没有成功的跳转，不知道问题所在&lt;br&gt;就去segmentfalt发帖问了&lt;br&gt;上个厕所回来，发现自己代码有问题，从头开始看，原来allowed_domains中的链接的topic写成了topics，然后生成的链接不在allowed_domains里面，所以就无法跳转&lt;/p&gt;
-&lt;p&gt;╮(╯▽╰)╭&lt;br&gt;粗心大意&lt;br&gt;不过以后不会遇到类似的问题了，也会对allowed_domains有更深的理解了&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;刚刚遇到一个奇怪的问题，代码应该是没有错误的&lt;br&gt;内容是这样的，准备在关于知乎的一个话题下，爬取所有问题的url保存到数据库中&lt;br&gt;但是，最后写了循环到yield scrapy.Request，但是没有成功的跳转，不知道问题所在&lt;br&gt;就去segmentfalt发帖问了
-    
-    </summary>
-    
-      <category term="error" scheme="http://yoursite.com/categories/error/"/>
     
     
       <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>

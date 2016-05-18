@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/2016/05/18/Pycharm%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE/</loc>
+        <lastmod>2016-05-18T09:25:53.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite.com/2016/05/18/%E5%A6%82%E4%BD%95%E6%89%BE%E5%88%B0Python%E7%9A%84site-packages%E8%B7%AF%E5%BE%84/</loc>
         <lastmod>2016-05-18T02:39:03.000Z</lastmod>
         <changefreq>weekly</changefreq>
