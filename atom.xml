@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-18T09:25:53.000Z</updated>
+  <updated>2016-05-19T07:51:09.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,152 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Scrapy下载中间件</title>
+    <link href="http://yoursite.com/2016/05/19/Scrapy%E4%B8%8B%E8%BD%BD%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+    <id>http://yoursite.com/2016/05/19/Scrapy下载中间件/</id>
+    <published>2016-05-19T07:45:53.000Z</published>
+    <updated>2016-05-19T07:51:09.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;下载中间件功能&quot;&gt;&lt;a href=&quot;#下载中间件功能&quot; class=&quot;headerlink&quot; title=&quot;下载中间件功能&quot;&gt;&lt;/a&gt;下载中间件功能&lt;/h2&gt;&lt;p&gt;这是处于引擎和下载器之间的一层组件，可以有多个下载中间件被加载运行， 在引擎传递请求给下载器的过程中，下载中间件可以对请求进行处理 （例如增加http header信息等）， 在下载器完成http请求，传递响应给引擎的过程中， 下载中间件可以对响应进行处理（例如进行gzip的解压等）&lt;/p&gt;
+&lt;h2 id=&quot;Scrapy框架自带的下载中间件&quot;&gt;&lt;a href=&quot;#Scrapy框架自带的下载中间件&quot; class=&quot;headerlink&quot; title=&quot;Scrapy框架自带的下载中间件&quot;&gt;&lt;/a&gt;Scrapy框架自带的下载中间件&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;CookiesMiddleware 跟踪处理 cookie&lt;/li&gt;
+&lt;li&gt;DownloadTimeoutMiddleware 设置请求超时时间&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://scrapy-chs.readthedocs.io/zh_CN/0.24/topics/downloader-middleware.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;其他下载中间件&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;scrapy-下载中间件的开启情况&quot;&gt;&lt;a href=&quot;#scrapy-下载中间件的开启情况&quot; class=&quot;headerlink&quot; title=&quot;scrapy 下载中间件的开启情况&quot;&gt;&lt;/a&gt;scrapy 下载中间件的开启情况&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;查看 /usr/local/lib/python2.7/dist-packages/scrapy/settings/default_settings.py 默认配置文件，变量 DOWNLOADER_MIDDLEWARES_BASE 的定义&lt;/li&gt;
+&lt;li&gt;settings.py中有些中间件有开关参数，例如 COOKIES_ENABLED 控制 CookiesMiddleware 开启或关闭&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;开发下载中间件，丢弃响应数据长度等于100的数据&quot;&gt;&lt;a href=&quot;#开发下载中间件，丢弃响应数据长度等于100的数据&quot; class=&quot;headerlink&quot; title=&quot;开发下载中间件，丢弃响应数据长度等于100的数据&quot;&gt;&lt;/a&gt;开发下载中间件，丢弃响应数据长度等于100的数据&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;创建 middlewares 目录（与 settings.py 文件在同一目录下）&lt;/li&gt;
+&lt;li&gt;在目录下创建 mymiddlewares.py 文件，创建类 CustomMiddlewares，下载中间件的类继承自 scrapy.contrib.downloadermiddleware.DownloaderMiddleware&lt;/li&gt;
+&lt;li&gt;DownloaderMiddleware 主要提供如下的方法&lt;ol&gt;
+&lt;li&gt;process_request 在请求传递给下载器前可以处理请求对象&lt;/li&gt;
+&lt;li&gt;process_response 在响应传递给引擎前处理响应数据&lt;/li&gt;
+&lt;li&gt;process_exception 处理异步调用时发生的异常情况&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;在 mymiddlewares.py 文件中添加下面代码&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; scrapy.exceptions &lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; IgnoreRequest&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; scrapy.contrib.downloadermiddleware &lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; DownloaderMiddleware&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;CustomMiddlewares&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(DownloaderMiddleware)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;process_response&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(self, request, response, spider)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; len(response.body) == &lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; IgnoreRequest(&lt;span class=&quot;string&quot;&gt;&quot;body length == 100&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; response&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol&gt;
+&lt;li&gt;在配置文件中Settings.py中配置激活下载中间件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;DOWNLOADER_MIDDLEWARES = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              &lt;span class=&quot;string&quot;&gt;&quot;zhihu.middlerwares.mymiddlewares.CustomMiddlewares&quot;&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;543&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;下载中间件功能&quot;&gt;&lt;a href=&quot;#下载中间件功能&quot; class=&quot;headerlink&quot; title=&quot;下载中间件功能&quot;&gt;&lt;/a&gt;下载中间件功能&lt;/h2&gt;&lt;p&gt;这是处于引擎和下载器之间的一层组件，可以有多个下载中间件被加载运行， 在引擎传递请求给下载器的过程中
+    
+    </summary>
+    
+    
+      <category term="scrapy downloadmidware" scheme="http://yoursite.com/tags/scrapy-downloadmidware/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MongoDB常用命令</title>
+    <link href="http://yoursite.com/2016/05/19/MongoDB%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yoursite.com/2016/05/19/MongoDB常用命令/</id>
+    <published>2016-05-19T07:28:12.000Z</published>
+    <updated>2016-05-19T07:28:36.000Z</updated>
+    
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;启动MongoDB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$mongod –fork –logpath=/data/log/r3.log&lt;br&gt;–fork 允许mongod后台运行，但是必须指定日志记录文件路径（Enables a daemon mode that runs the mongos process in the background.）&lt;br&gt;–logpath 指定日志记录文件路径&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;导出Collections&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$mongoexport -d test -c user -o user.dat&lt;br&gt;-d 指定数据库&lt;br&gt;-c 指定collections&lt;br&gt;-o 指定输出文件名称&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;导出Collections为CSV格式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$mongoexport -d test -c user –csv -f uid,username,age -o user_csv.dat&lt;br&gt;-f 指明需要导出哪些列&lt;br&gt;—-csv 指明导出格式为CSV&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;导入Collections&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$mongoimport -d test -c user user.dat&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;导入CSV文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$mongoimport -d test -c user –type csv –headerline –file user_csv.dat&lt;br&gt;-type 指明要导入的文件格式&lt;br&gt;-headerline 批明不导入第一行,因为第一行是列名&lt;br&gt;-file 指明要导入的文件路径&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;数据库备份&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$ mongodump -d test&lt;br&gt;2016-02-19T16:44:20.538+0800 writing test.things to&lt;br&gt;2016-02-19T16:44:20.538+0800 writing test.students to&lt;br&gt;2016-02-19T16:44:20.538+0800 writing test.fs.chunks to&lt;br&gt;2016-02-19T16:44:20.538+0800 writing test.thins to&lt;br&gt;2016-02-19T16:44:20.539+0800 done dumping test.thins (9 documents)&lt;br&gt;2016-02-19T16:44:20.539+0800 done dumping test.things (20 documents)&lt;br&gt;2016-02-19T16:44:20.540+0800 done dumping test.students (8 documents)&lt;br&gt;2016-02-19T16:44:20.540+0800 writing test.user to&lt;br&gt;2016-02-19T16:44:20.540+0800 writing test.fs.files to&lt;br&gt;2016-02-19T16:44:20.540+0800 writing test.students_res to&lt;br&gt;2016-02-19T16:44:20.541+0800 done dumping test.fs.files (1 document)&lt;br&gt;2016-02-19T16:44:20.541+0800 done dumping test.students_res (1 document)&lt;br&gt;2016-02-19T16:44:20.541+0800 done dumping test.user (2 documents)&lt;br&gt;2016-02-19T16:44:20.544+0800 done dumping test.fs.chunks (5 documents)&lt;br&gt;也可以加入-o path_to_dump来指定备份的目录&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;数据库恢复&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$ mongorestore -d test dump/&lt;em&gt;&lt;br&gt;*&lt;/em&gt;如果想恢复数据库，可以不用先删除数据库，可以在命令后面加入-drop来删除表，然后再想表中插入数据&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;查看数据库正在做什么&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;db.currentOp();&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;创建数据库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;MongoDB没有创建数据库的命令，可以直接使用use test来创建test数据库&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建Collcetion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;db.createCollection(“questions”);&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;MongoDB实时监控&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;此工具可以快速的查看某组运行中的 MongoDB 实例的统计信息&lt;br&gt;$mongostat&lt;br&gt;insert: 每秒插入量&lt;br&gt;query: 每秒查询量&lt;br&gt;update: 每秒更新量&lt;br&gt;delete: 每秒删除量&lt;br&gt;locked: 锁定量&lt;br&gt;qr | qw: 客户端查询排队长度(读|写)&lt;br&gt;ar | aw: 活跃客户端量(读|写)&lt;br&gt;conn: 连接数 time: 当前时间&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;删除重复数据，建立索引(MongoDB 2.x)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;coll.ensureIndex({productid:1}) // 在productid上建立普通索引&lt;br&gt;coll.ensureIndex({district:1, plate:1}) // 多字段索引&lt;br&gt;coll.ensureIndex({productid:1}, {unique:true}) // 唯一索引&lt;br&gt;coll.ensureIndex({productid:1}, {unique:true, dropDups:true}) // 建索引时，如果遇到索引字段值已经出现过的情况，则删除重复记录&lt;br&gt;coll.getIndexes() // 查看索引&lt;br&gt;coll.dropIndex({productid:1}) // 删除单个索&lt;/p&gt;
+&lt;p&gt;db.users.dropIndex({uid:1});&lt;br&gt;db.users.ensureIndex({uid:1, name:1}, {unique:true, dropDups:true});&lt;br&gt;db.zhihu.ensureIndex({qid:1}, {unique:true});&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;删除collection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;db.collection.drop()&lt;br&gt;example: db.students.drop()&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;启动MongoDB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$mongod –fork –logpath=/data/log/r3.log&lt;br&gt;–fork 允许mongod后台运行，但是必须指定日志记录文件路径（Enables a daemon mode that run
+    
+    </summary>
+    
+    
+      <category term="MonogDB" scheme="http://yoursite.com/tags/MonogDB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MongoDB创建索引</title>
+    <link href="http://yoursite.com/2016/05/19/MongoDB%E5%88%9B%E5%BB%BA%E7%B4%A2%E5%BC%95/"/>
+    <id>http://yoursite.com/2016/05/19/MongoDB创建索引/</id>
+    <published>2016-05-19T07:19:31.000Z</published>
+    <updated>2016-05-19T07:27:37.000Z</updated>
+    
+    <content type="html">&lt;p&gt;由于爬虫使用的是MongoDB，常常会爬取到重复的数据，通过MongoDB的命令删除重复的数据，对于3.0来说，需要使用聚合来删除，而且使用之前每次都需要对于源数据进行操作，所以比较麻烦，还是通过直接建立索引，对于重复的数据直接不写入到数据库中，比较方便一点。&lt;br&gt;MongoDB建立独立索引的步骤：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; db.createCollection(&amp;quot;questions&amp;quot;);	#创建Collection&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt; db.question.ensureIndex(&amp;#123;qid:1&amp;#125;, &amp;#123;unique:true&amp;#125;); #创建索引&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;由于爬虫使用的是MongoDB，常常会爬取到重复的数据，通过MongoDB的命令删除重复的数据，对于3.0来说，需要使用聚合来删除，而且使用之前每次都需要对于源数据进行操作，所以比较麻烦，还是通过直接建立索引，对于重复的数据直接不写入到数据库中，比较方便一点。&lt;br&gt;Mon
+    
+    </summary>
+    
+    
+      <category term="MongoDB" scheme="http://yoursite.com/tags/MongoDB/"/>
+    
+  </entry>
   
   <entry>
     <title>Pycharm主题设置</title>
@@ -635,82 +781,6 @@
     
     
       <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Pycharm怎么用</title>
-    <link href="http://yoursite.com/2016/05/09/Pycharm%E6%80%8E%E4%B9%88%E7%94%A8/"/>
-    <id>http://yoursite.com/2016/05/09/Pycharm怎么用/</id>
-    <published>2016-05-09T08:15:35.000Z</published>
-    <updated>2016-05-09T08:15:35.000Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>scrapy 在不同的抓取级别的Request之间传递参数的办法</title>
-    <link href="http://yoursite.com/2016/05/09/scrapy-%E5%9C%A8%E4%B8%8D%E5%90%8C%E7%9A%84%E6%8A%93%E5%8F%96%E7%BA%A7%E5%88%AB%E7%9A%84Request%E4%B9%8B%E9%97%B4%E4%BC%A0%E9%80%92%E5%8F%82%E6%95%B0%E7%9A%84%E5%8A%9E%E6%B3%95/"/>
-    <id>http://yoursite.com/2016/05/09/scrapy-在不同的抓取级别的Request之间传递参数的办法/</id>
-    <published>2016-05-09T07:44:36.000Z</published>
-    <updated>2016-05-09T07:45:48.000Z</updated>
-    
-    <content type="html">&lt;blockquote&gt;
-&lt;p&gt;scrapy 在不同的抓取级别的Request之间传递参数的办法，下面的范例中，parse_item通过meat传递给了parse_details参数item，这样就可以再parse_details抓取完成所有的数据后一次返回&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;MySpider&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(BaseSpider)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    name = &lt;span class=&quot;string&quot;&gt;&#39;myspider&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    start_urls = (&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;string&quot;&gt;&#39;http://example.com/page1&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;string&quot;&gt;&#39;http://example.com/page2&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        )&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(self, response)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;# collect `item_urls`&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; item_url &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; item_urls:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;yield&lt;/span&gt; Request(url=item_url, callback=self.parse_item)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;parse_item&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(self, response)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        item = MyItem()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;# populate `item` fields&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;yield&lt;/span&gt; Request(url=item_details_url, meta=&amp;#123;&lt;span class=&quot;string&quot;&gt;&#39;item&#39;&lt;/span&gt;: item&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            callback=self.parse_details)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;parse_details&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(self, response)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        item = response.meta[&lt;span class=&quot;string&quot;&gt;&#39;item&#39;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;# populate more `item` fields&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; item&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;scrapy 在不同的抓取级别的Request之间传递参数的办法，下面的范例中，parse_item通过meat传递给了parse_details参数item，这样就可以再parse_details抓取完成所有的数据后一次返回&lt;/p&gt;
-&lt;/bloc
-    
-    </summary>
-    
-    
-      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>scrapy登录知乎以及相关问题</title>
-    <link href="http://yoursite.com/2016/05/06/scrapy%E7%99%BB%E5%BD%95%E7%9F%A5%E4%B9%8E%E4%BB%A5%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/"/>
-    <id>http://yoursite.com/2016/05/06/scrapy登录知乎以及相关问题/</id>
-    <published>2016-05-06T03:09:25.000Z</published>
-    <updated>2016-05-06T03:19:43.000Z</updated>
-    
-    <content type="html">&lt;blockquote&gt;
-&lt;p&gt;因为想爬虫知乎的数据，所以采用scrapy来进行爬虫&lt;br&gt;对于一般的问题的链接以及相关的内容不需要登录，但是对于用户的关注数据，必须得登录之后才能获取&lt;br&gt;所以，通过scrapy登录&lt;br&gt;在登录的过程中，碰到了一点问题：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;验证码获取问题&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;本来是想通过xpath来获取，通过shell调试后，发现无论怎么获取都是空的，无法获取，可能是因为js动态生成的原因而无法获取&lt;br&gt;–&amp;gt;曲线救国&lt;br&gt;所以查看captcha的src的地址，找到规律如下&lt;br&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;p = re.compile(&lt;span class=&quot;string&quot;&gt;r&#39;\d&amp;#123;13&amp;#125;&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;t = repr(time.time()*&lt;span class=&quot;number&quot;&gt;1000&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;m = p.findall(t)[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 获得验证码的地址&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;captcha_url = &lt;span class=&quot;string&quot;&gt;&quot;http://m.zhihu.com/captcha.gif?r=&quot;&lt;/span&gt; + m + &lt;span class=&quot;string&quot;&gt;&quot;&amp;amp;type=login&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;其中repr方法第一次使用，为了让原始的object变成字符串，help返回如下：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;repr(...)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    repr(object) -&amp;gt; string&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Return the canonical string representation of the object.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    For most object types, eval(repr(object)) == object.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;手动的获取&lt;/p&gt;
-&lt;p&gt;在这之前，因为好几次使用了错误的密码，导致耽搁了进程&lt;/p&gt;
-&lt;p&gt;po一下部分代码,截取到登录部分：&lt;br&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;65&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;66&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;67&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;68&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;69&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;70&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;71&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;72&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;73&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;74&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;75&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;76&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;77&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;78&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;79&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;80&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;81&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;82&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;83&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;84&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;85&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;86&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;87&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;88&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;89&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;90&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;91&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;92&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;93&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;94&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;95&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;96&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; scrapy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; urlparse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; scrapy.loader &lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; ItemLoader&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; scrapy.loader.processors &lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; MapCompose, Join&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; ..settings &lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; headers, mode, proxy, email, password, host, port, db&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; ..items &lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; ZhihuTry2Item&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; time&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; os&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; re&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;TopicSpider&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(scrapy.Spider)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    name = &lt;span class=&quot;string&quot;&gt;&quot;topic&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    allowed_domains = [&lt;span class=&quot;string&quot;&gt;&quot;m.zhihu.com&quot;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    zhihu_url = &lt;span class=&quot;string&quot;&gt;&quot;https://m.zhihu.com&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    login_url = &lt;span class=&quot;string&quot;&gt;&quot;https://m.zhihu.com/login/email&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    start_urls = (&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;string&quot;&gt;&#39;http://m.zhihu.com/&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    )&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;start_requests&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(self)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;yield&lt;/span&gt; scrapy.Request(&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            url=self.zhihu_url,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            headers=headers,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            meta=&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;string&quot;&gt;&quot;proxy&quot;&lt;/span&gt;: proxy,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;string&quot;&gt;&quot;cookiejar&quot;&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            callback=self.request_captcha&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        )&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;request_captcha&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(self, response)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;# 获取_xsrf值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        _xsrf = response.css(&lt;span class=&quot;string&quot;&gt;&#39;input[name=&quot;_xsrf&quot;]::attr(value)&#39;&lt;/span&gt;).extract()[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        p = re.compile(&lt;span class=&quot;string&quot;&gt;r&#39;\d&amp;#123;13&amp;#125;&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        t = repr(time.time()*&lt;span class=&quot;number&quot;&gt;1000&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        m = p.findall(t)[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;# 获得验证码的地址&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        captcha_url = &lt;span class=&quot;string&quot;&gt;&quot;http://m.zhihu.com/captcha.gif?r=&quot;&lt;/span&gt; + m + &lt;span class=&quot;string&quot;&gt;&quot;&amp;amp;type=login&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;# 准备下载验证码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;# 获取请求&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;yield&lt;/span&gt; scrapy.Request(&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            url=captcha_url,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            headers=headers,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            meta=&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;string&quot;&gt;&quot;proxy&quot;&lt;/span&gt;: proxy,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;string&quot;&gt;&quot;cookiejar&quot;&lt;/span&gt;: response.meta[&lt;span class=&quot;string&quot;&gt;&quot;cookiejar&quot;&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;string&quot;&gt;&quot;_xsrf&quot;&lt;/span&gt;: _xsrf&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            callback=self.download_captcha&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        )&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;download_captcha&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(self, response)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;# 下载验证码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;with&lt;/span&gt; open(&lt;span class=&quot;string&quot;&gt;&quot;captcha.gif&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;wb&quot;&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;as&lt;/span&gt; fp:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            fp.write(response.body)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;# 打开验证码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        os.system(&lt;span class=&quot;string&quot;&gt;&#39;open captcha.gif&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;# 输入验证码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;请输入验证码:\n&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        captcha = raw_input()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;# 输入账号和密码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;yield&lt;/span&gt; scrapy.FormRequest(&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            url=self.login_url,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            headers=headers,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            formdata=&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;string&quot;&gt;&quot;email&quot;&lt;/span&gt;: email,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;string&quot;&gt;&quot;password&quot;&lt;/span&gt;: password,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;string&quot;&gt;&quot;_xsrf&quot;&lt;/span&gt;: response.meta[&lt;span class=&quot;string&quot;&gt;&quot;_xsrf&quot;&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;string&quot;&gt;&quot;remember_me&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;true&quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;string&quot;&gt;&quot;captcha&quot;&lt;/span&gt;: captcha&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            meta=&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;string&quot;&gt;&quot;proxy&quot;&lt;/span&gt;: proxy,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;string&quot;&gt;&quot;cookiejar&quot;&lt;/span&gt;: response.meta[&lt;span class=&quot;string&quot;&gt;&quot;cookiejar&quot;&lt;/span&gt;],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            callback=self.request_zhihu&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        )&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;request_zhihu&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(self, response)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;string&quot;&gt;&quot;&quot;&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            现在已经登录,请求www.zhihu.com的页面&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &quot;&quot;&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; response.body&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;# yield scrapy.Request(url=self.zhihu_url,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;#                      headers=self.headers_dict,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;#                      meta=&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;#                          &quot;proxy&quot;: proxy,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;#                          &quot;cookiejar&quot;: response.meta[&quot;cookiejar&quot;],&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;#                      &amp;#125;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;#                      callback=self.get_question,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;#                      dont_filter=True)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;因为想爬虫知乎的数据，所以采用scrapy来进行爬虫&lt;br&gt;对于一般的问题的链接以及相关的内容不需要登录，但是对于用户的关注数据，必须得登录之后才能获取&lt;br&gt;所以，通过scrapy登录&lt;br&gt;在登录的过程中，碰到了一点问题：&lt;/p&gt;
-&lt;ol&gt;
-&lt;
-    
-    </summary>
-    
-    
-      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
     
   </entry>
   
