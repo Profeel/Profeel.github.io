@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/2016/05/20/DS5300-Lose-path-redundancy%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3/</loc>
+        <lastmod>2016-05-20T03:57:31.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2016/05/19/%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8D3JS%E4%BD%9C%E5%9B%BE/</loc>
+        <lastmod>2016-05-20T03:46:13.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite.com/2016/05/19/Scrapy%E4%B8%8B%E8%BD%BD%E4%B8%AD%E9%97%B4%E4%BB%B6/</loc>
         <lastmod>2016-05-19T07:51:09.000Z</lastmod>
         <changefreq>weekly</changefreq>

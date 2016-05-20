@@ -23,13 +23,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/error/</loc>
-        <lastmod>2016-05-11T07:49:27.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/tags/css-selector/</loc>
         <lastmod>2016-05-11T08:22:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -51,14 +44,14 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/tools/</loc>
+        <loc>http://yoursite.com/tags/scrapy/</loc>
         <lastmod>2016-05-13T02:36:42.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/scrapy/</loc>
+        <loc>http://yoursite.com/tags/tools/</loc>
         <lastmod>2016-05-13T02:36:42.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -123,6 +116,41 @@
     <url>
         <loc>http://yoursite.com/tags/scrapy-downloadmidware/</loc>
         <lastmod>2016-05-19T07:51:09.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/d3js/</loc>
+        <lastmod>2016-05-20T03:46:13.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/error/</loc>
+        <lastmod>2016-05-20T03:57:31.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/AIX/</loc>
+        <lastmod>2016-05-20T03:57:31.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/DS5300/</loc>
+        <lastmod>2016-05-20T03:57:31.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/IBM/</loc>
+        <lastmod>2016-05-20T03:57:31.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
