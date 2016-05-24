@@ -51,13 +51,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/tools/</loc>
-        <lastmod>2016-05-13T02:36:42.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/tags/yield/</loc>
         <lastmod>2016-05-16T01:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -67,27 +60,6 @@
     <url>
         <loc>http://yoursite.com/tags/git/</loc>
         <lastmod>2016-05-16T03:47:58.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/tags/%E5%A4%B1%E7%9C%A0/</loc>
-        <lastmod>2016-05-18T00:20:37.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/tags/%E6%99%9A%E7%9D%A1/</loc>
-        <lastmod>2016-05-18T00:20:37.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/tags/python/</loc>
-        <lastmod>2016-05-18T02:39:03.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -151,6 +123,41 @@
     <url>
         <loc>http://yoursite.com/tags/IBM/</loc>
         <lastmod>2016-05-20T03:57:31.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/%E5%A4%B1%E7%9C%A0/</loc>
+        <lastmod>2016-05-24T00:07:46.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/%E6%99%9A%E7%9D%A1/</loc>
+        <lastmod>2016-05-24T00:07:46.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/tools/</loc>
+        <lastmod>2016-05-24T00:21:32.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/virtualenv/</loc>
+        <lastmod>2016-05-24T00:21:32.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/python/</loc>
+        <lastmod>2016-05-24T00:21:32.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

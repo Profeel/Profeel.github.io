@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-20T03:57:31.000Z</updated>
+  <updated>2016-05-24T00:21:32.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Virtualenv的使用方法</title>
+    <link href="http://yoursite.com/2016/05/24/Virtualenv%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/"/>
+    <id>http://yoursite.com/2016/05/24/Virtualenv的使用方法/</id>
+    <published>2016-05-24T00:11:35.000Z</published>
+    <updated>2016-05-24T00:21:32.000Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;virtualenv is a tool to create isolated Python environments.&lt;/p&gt;
+&lt;h1 id=&quot;为什么要使用virtualenv？&quot;&gt;&lt;a href=&quot;#为什么要使用virtualenv？&quot; class=&quot;headerlink&quot; title=&quot;为什么要使用virtualenv？&quot;&gt;&lt;/a&gt;为什么要使用virtualenv？&lt;/h1&gt;&lt;p&gt;virtualenv通过创建独立Python开发环境的工具, 来解决依赖、版本以及间接权限&lt;br&gt;问题. 比如一个项目依赖Django1.3 而当前全局开发环境为Django1.7, 版本跨度过大, 导致不兼容使项目无法正在运行, 使用virtualenv可以解决这些问题.&lt;br&gt;在windows下，可以方便的使用virtualenv来解决因为路径以及windows下编程的一些问题&lt;br&gt;virtualenv创建一个拥有自己安装目录的环境, 这个环境不与其他虚拟环境共享库, 能够方便的管理python版本和管理python库&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;安装Virutalenv&quot;&gt;&lt;a href=&quot;#安装Virutalenv&quot; class=&quot;headerlink&quot; title=&quot;安装Virutalenv&quot;&gt;&lt;/a&gt;安装Virutalenv&lt;/h1&gt;&lt;p&gt;前提是你已经安装了pip&lt;br&gt;&lt;code&gt;pip install virtualenv&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id=&quot;使用virtualenv&quot;&gt;&lt;a href=&quot;#使用virtualenv&quot; class=&quot;headerlink&quot; title=&quot;使用virtualenv&quot;&gt;&lt;/a&gt;使用virtualenv&lt;/h1&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 创建虚拟环境&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ProfeelsMacBook-Pro:virtualenv wangqi$ virtualenv env&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;New python executable &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; env/bin/python&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Installing setuptools, pip, wheel...done.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ProfeelsMacBook-Pro:virtualenv wangqi$ cd env/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ProfeelsMacBook-Pro:env wangqi$ ls&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;bin	include	lib&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 激活虚拟环境&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ProfeelsMacBook-Pro:env wangqi$ source bin/activate &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(env)ProfeelsMacBook-Pro:env wangqi$ python&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Python &lt;span class=&quot;number&quot;&gt;2.7&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;.10&lt;/span&gt; (default, Oct &lt;span class=&quot;number&quot;&gt;23&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;2015&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;18&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;05&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;06&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[GCC &lt;span class=&quot;number&quot;&gt;4.2&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;.1&lt;/span&gt; Compatible Apple LLVM &lt;span class=&quot;number&quot;&gt;7.0&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;.0&lt;/span&gt; (clang&lt;span class=&quot;number&quot;&gt;-700.0&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;.59&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;.5&lt;/span&gt;)] on darwin&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Type &lt;span class=&quot;string&quot;&gt;&quot;help&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;copyright&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;credits&quot;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;license&quot;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; more information.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;KeyboardInterrupt&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;^D&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(env)ProfeelsMacBook-Pro:env wangqi$ pip list&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;pip (&lt;span class=&quot;number&quot;&gt;7.1&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;.2&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;setuptools (&lt;span class=&quot;number&quot;&gt;18.2&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wheel (&lt;span class=&quot;number&quot;&gt;0.24&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;.0&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;You are using pip version &lt;span class=&quot;number&quot;&gt;7.1&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;.2&lt;/span&gt;, however version &lt;span class=&quot;number&quot;&gt;8.1&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;.2&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;is&lt;/span&gt; available.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;You should consider upgrading via the &lt;span class=&quot;string&quot;&gt;&#39;pip install --upgrade pip&#39;&lt;/span&gt; command.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(env)ProfeelsMacBook-Pro:env wangqi$&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;virtualenv is a tool to create isolated Python environments.&lt;/p&gt;
+&lt;h1 id=&quot;为什么要使用virtualenv？&quot;&gt;&lt;a href=&quot;#为什么要使用virtualenv？&quot; cla
+    
+    </summary>
+    
+    
+      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
+    
+      <category term="virtualenv" scheme="http://yoursite.com/tags/virtualenv/"/>
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>DS5300 Lose path redundancy错误解决</title>
@@ -427,9 +459,9 @@
     </summary>
     
     
-      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
-    
       <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
+    
+      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
     
   </entry>
   
@@ -587,7 +619,7 @@
     <link href="http://yoursite.com/2016/05/11/%E6%99%9A%E7%9D%A1%E5%BC%BA%E8%BF%AB%E7%97%87%E6%82%A3%E8%80%85/"/>
     <id>http://yoursite.com/2016/05/11/晚睡强迫症患者/</id>
     <published>2016-05-11T00:51:29.000Z</published>
-    <updated>2016-05-18T00:20:37.000Z</updated>
+    <updated>2016-05-24T00:07:46.000Z</updated>
     
     <content type="html">&lt;p&gt;最近晚睡成了一种习惯，以前偶尔失眠只是到1点2点，现在动不动就到了4点5点，甚至6点。我觉得我需要正视这个问题了，已经快持续两个月了，需要强烈地改变现状。&lt;br&gt;前期是因为失恋导致的，现在成了一种习惯。&lt;br&gt;现在制订改善方案：&lt;/p&gt;
 &lt;ol&gt;
@@ -656,7 +688,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;去看过医生了，医生建议运动最好是微微出汗，不要过度。&lt;/p&gt;
+&lt;p&gt;去看过医生了，医生建议运动最好是微微出汗，不要过度。&lt;br&gt;如果前一天晚上失眠，第二天白天千万不要睡午觉，也不要休息！撑到晚上9点，10点以后再休息！这样，第二天才不会再继续失眠！&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -789,30 +821,6 @@
       <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
     
       <category term="css selector" scheme="http://yoursite.com/tags/css-selector/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于ShadowSocks连接Dropbox设置</title>
-    <link href="http://yoursite.com/2016/05/10/%E5%85%B3%E4%BA%8EShadowSocks%E8%BF%9E%E6%8E%A5Dropbox%E8%AE%BE%E7%BD%AE/"/>
-    <id>http://yoursite.com/2016/05/10/关于ShadowSocks连接Dropbox设置/</id>
-    <published>2016-05-10T00:51:24.000Z</published>
-    <updated>2016-05-10T00:58:21.000Z</updated>
-    
-    <content type="html">&lt;p&gt;关于连接Dropbox，因为已经开启了ShadowSocks，但是Dropbox还是没有连接上，Dropbox官网是可以上的，说明连接没有问题，应该是客户端代理的问题。&lt;br&gt;应该把客户端的代理设置为本地代理，ShadowSocks连接使用全局&lt;br&gt;如下配置：&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/hexo2016-05-10%20at%20%E4%B8%8A%E5%8D%888.53.jpeg&quot; alt=&quot;配置信息&quot;&gt;&lt;/p&gt;
-&lt;p&gt;配置完成之后，重启Dropbox客户端即可&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;关于连接Dropbox，因为已经开启了ShadowSocks，但是Dropbox还是没有连接上，Dropbox官网是可以上的，说明连接没有问题，应该是客户端代理的问题。&lt;br&gt;应该把客户端的代理设置为本地代理，ShadowSocks连接使用全局&lt;br&gt;如下配置：&lt;br&gt;&lt;i
-    
-    </summary>
-    
-    
-      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
-    
-      <category term="dropbox" scheme="http://yoursite.com/tags/dropbox/"/>
     
   </entry>
   
