@@ -72,20 +72,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/MongoDB/</loc>
-        <lastmod>2016-05-19T07:27:37.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/tags/MonogDB/</loc>
-        <lastmod>2016-05-19T07:28:36.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/tags/scrapy-downloadmidware/</loc>
         <lastmod>2016-05-19T07:51:09.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -158,6 +144,20 @@
     <url>
         <loc>http://yoursite.com/tags/python/</loc>
         <lastmod>2016-05-24T00:21:32.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/MonogDB/</loc>
+        <lastmod>2016-05-24T01:54:32.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/MongoDB/</loc>
+        <lastmod>2016-05-25T02:49:42.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
