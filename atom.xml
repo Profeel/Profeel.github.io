@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-25T02:49:42.000Z</updated>
+  <updated>2016-06-24T03:36:14.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,120 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MongoDB2.75之后删除冗余文档</title>
+    <link href="http://yoursite.com/2016/06/24/MongoDB2-75%E4%B9%8B%E5%90%8E%E5%88%A0%E9%99%A4%E5%86%97%E4%BD%99%E6%96%87%E6%A1%A3/"/>
+    <id>http://yoursite.com/2016/06/24/MongoDB2-75之后删除冗余文档/</id>
+    <published>2016-06-24T03:33:39.000Z</published>
+    <updated>2016-06-24T03:36:14.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;strong&gt;遇到的问题：&lt;/strong&gt;MongoDB3删除冗余的documents&lt;br&gt;&lt;strong&gt;解决方法：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;创建集合，选择超过1个的文档&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var cur = db.questions.aggregate([&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123; $group: &amp;#123; _id: &amp;#123; qid: &amp;quot;$qid&amp;quot; &amp;#125;, uniqueIds: &amp;#123; $addToSet: &amp;quot;$_id&amp;quot; &amp;#125;, count: &amp;#123; $sum: 1 &amp;#125; &amp;#125; &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123; $match: &amp;#123; count: &amp;#123; $gt: 1 &amp;#125; &amp;#125; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;]);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol&gt;
+&lt;li&gt;通过迭代的方式，将上面选择出来的冗余的集合中的文档在之前的集合中进行删除&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;while (cur.hasNext()) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var doc = cur.next();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var index = 1;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;while (index &amp;lt; doc.uniqueIds.length) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;db.questions.remove(doc.uniqueIds[index]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;index = index + 1;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;参考文章：&lt;/strong&gt;&lt;a href=&quot;http://stackoverflow.com/questions/30187688/mongo-3-duplicates-on-unique-index-dropdups&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Stackoverflow-Mongo 3 duplicates on unique in index -dropDups&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;遇到的问题：&lt;/strong&gt;MongoDB3删除冗余的documents&lt;br&gt;&lt;strong&gt;解决方法：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;创建集合，选择超过1个的文档&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight p
+    
+    </summary>
+    
+    
+      <category term="MongoDB" scheme="http://yoursite.com/tags/MongoDB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一些后悔没有早点懂的道理</title>
+    <link href="http://yoursite.com/2016/06/06/%E4%B8%80%E4%BA%9B%E5%90%8E%E6%82%94%E6%B2%A1%E6%9C%89%E6%97%A9%E7%82%B9%E6%87%82%E7%9A%84%E9%81%93%E7%90%86/"/>
+    <id>http://yoursite.com/2016/06/06/一些后悔没有早点懂的道理/</id>
+    <published>2016-06-06T03:05:06.000Z</published>
+    <updated>2016-06-06T03:05:06.000Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>HPUX宕机差错步骤</title>
+    <link href="http://yoursite.com/2016/06/01/HPUX%E5%AE%95%E6%9C%BA%E5%B7%AE%E9%94%99%E6%AD%A5%E9%AA%A4/"/>
+    <id>http://yoursite.com/2016/06/01/HPUX宕机差错步骤/</id>
+    <published>2016-06-01T02:32:42.000Z</published>
+    <updated>2016-06-01T02:42:17.000Z</updated>
+    
+    <content type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;查看有没有coredump&lt;br&gt; /etc/adm/crash&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;查看syslog&lt;br&gt;/etc/adm/syslog/syslog.log&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;查看关机日志&lt;br&gt;/etc/shutdownlog&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;查看集群日志&lt;br&gt;cmviewcl -v&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;查看硬件相关&lt;br&gt;ioscan -fn&lt;br&gt;armdsp -a &amp;lt;阵列标识号 - ArrayID&amp;gt;&lt;br&gt;&lt;code&gt;# logprn –t all –v –a &amp;lt;阵列标识号 - ArrayID&amp;gt; -s mmddhhmmyy&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;查看系统启动日志&lt;br&gt;/etc/rc.log&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;查看有没有coredump&lt;br&gt; /etc/adm/crash&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;查看syslog&lt;br&gt;/etc/adm/syslog/syslog.log&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;查看关机日志&lt;br&gt;/etc/shutdow
+    
+    </summary>
+    
+    
+      <category term="error" scheme="http://yoursite.com/tags/error/"/>
+    
+      <category term="hpux" scheme="http://yoursite.com/tags/hpux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Monogdb update更新数据</title>
+    <link href="http://yoursite.com/2016/05/31/Monogdb-update%E6%9B%B4%E6%96%B0%E6%95%B0%E6%8D%AE/"/>
+    <id>http://yoursite.com/2016/05/31/Monogdb-update更新数据/</id>
+    <published>2016-05-31T08:42:10.000Z</published>
+    <updated>2016-05-31T08:45:39.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;code&gt;&amp;gt; db.books.update({&amp;quot;download_links&amp;quot; : &amp;quot;http://file.allitebooks.com/20160514/Moodle%20E-Learning%20Course%20Development.pdf&amp;quot;},{$set:{has_download:0}});&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;第一个：为条件&lt;br&gt;第二个：为变更的值&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;from bson.objectid import ObjectId&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import pymongo&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;client = pymongo.MongoClient(&amp;quot;localhost&amp;quot;, 27017)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;db = client.mydbname&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;db.ProductData.update_one(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;apos;_id&amp;apos;: ObjectId(p[&amp;apos;_id&amp;apos;])&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;,&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;apos;$set&amp;apos;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;apos;d.a&amp;apos;: existing + 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;, upsert=False)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;&amp;gt; db.books.update({&amp;quot;download_links&amp;quot; : &amp;quot;http://file.allitebooks.com/20160514/Moodle%20E-Learning%20Course%20Develo
+    
+    </summary>
+    
+    
+      <category term="MongoDB" scheme="http://yoursite.com/tags/MongoDB/"/>
+    
+  </entry>
   
   <entry>
     <title>MongoDB 查询返回某一列的值</title>
@@ -441,7 +555,7 @@
     <link href="http://yoursite.com/2016/05/12/Python-Or-Scrapy%E4%B9%8B%E9%A2%84%E5%85%88%E5%96%84%E5%85%B6%E4%BA%8B%E5%BF%85%E5%85%88%E5%88%A9%E5%85%B6%E5%99%A8/"/>
     <id>http://yoursite.com/2016/05/12/Python-Or-Scrapy之预先善其事必先利其器/</id>
     <published>2016-05-12T07:37:42.000Z</published>
-    <updated>2016-05-13T02:36:42.000Z</updated>
+    <updated>2016-06-01T01:38:47.000Z</updated>
     
     <content type="html">&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;编译器：&lt;/p&gt;
@@ -460,6 +574,11 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://portal.shadowsocks.com/aff.php?aff=6996&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ShadowSocks&lt;/a&gt;，年费大概100元/year 日均0.3元&lt;br&gt;&lt;strong&gt;评价：稳定、不限流量、支持支付宝付款 &lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Lantern （自行google）&lt;br&gt;评价： Mac、Android免费，网速不快，流量不限，简单上网可用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Atom&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;代码编辑器&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/bf4ce84937d2b1fe46f790cffcca06be.png&quot; alt=&quot;atom-qiniu-uploader&quot;&gt;&lt;br&gt;七牛云存储直接通过Markdown直接自动上传&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -482,9 +601,9 @@
     </summary>
     
     
-      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
-    
       <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
+    
+      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
     
   </entry>
   
@@ -599,220 +718,6 @@
     
     
       <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于Mac Pro连接外接显示器分辨率问题</title>
-    <link href="http://yoursite.com/2016/05/11/%E5%85%B3%E4%BA%8EMac-Pro%E8%BF%9E%E6%8E%A5%E5%A4%96%E6%8E%A5%E6%98%BE%E7%A4%BA%E5%99%A8%E5%88%86%E8%BE%A8%E7%8E%87%E9%97%AE%E9%A2%98/"/>
-    <id>http://yoursite.com/2016/05/11/关于Mac-Pro连接外接显示器分辨率问题/</id>
-    <published>2016-05-11T07:41:08.000Z</published>
-    <updated>2016-05-11T07:49:27.000Z</updated>
-    
-    <content type="html">&lt;p&gt;关于外接显示器可能没有显示合适的分辨率，此时需要一点操作才能发现更多的显示器分辨率选项&lt;br&gt;操作如下图所示：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;先把选项拨到显示器默认&lt;/li&gt;
-&lt;li&gt;按住option键&lt;/li&gt;
-&lt;li&gt;选项调整为缩放，此时可以看到更多的选项了&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;/imgs/2016-05-11/1.jpeg&quot; alt=&quot;设置分辨率&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;可以参考&lt;a href=&quot;https://support.apple.com/zh-cn/HT201177&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;苹果官方设置&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;关于外接显示器可能没有显示合适的分辨率，此时需要一点操作才能发现更多的显示器分辨率选项&lt;br&gt;操作如下图所示：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;先把选项拨到显示器默认&lt;/li&gt;
-&lt;li&gt;按住option键&lt;/li&gt;
-&lt;li&gt;选项调整为缩放，此时可以看到更多的选项了&lt;/li&gt;
-&lt;/
-    
-    </summary>
-    
-    
-      <category term="error" scheme="http://yoursite.com/tags/error/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>晚睡强迫症患者</title>
-    <link href="http://yoursite.com/2016/05/11/%E6%99%9A%E7%9D%A1%E5%BC%BA%E8%BF%AB%E7%97%87%E6%82%A3%E8%80%85/"/>
-    <id>http://yoursite.com/2016/05/11/晚睡强迫症患者/</id>
-    <published>2016-05-11T00:51:29.000Z</published>
-    <updated>2016-05-24T00:07:46.000Z</updated>
-    
-    <content type="html">&lt;p&gt;最近晚睡成了一种习惯，以前偶尔失眠只是到1点2点，现在动不动就到了4点5点，甚至6点。我觉得我需要正视这个问题了，已经快持续两个月了，需要强烈地改变现状。&lt;br&gt;前期是因为失恋导致的，现在成了一种习惯。&lt;br&gt;现在制订改善方案：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;晚上22点，关闭wifi，关闭手机。&lt;/li&gt;
-&lt;li&gt;睡前打坐30分钟。&lt;/li&gt;
-&lt;li&gt;每天晚上去健身房跑步1小时，慢跑出汗即可，洗澡。&lt;/li&gt;
-&lt;li&gt;午睡不能超过45分钟。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;暂时就这么打算吧。之后第二天早上反馈前一天的执行情况，坚持，改善生活。&lt;/p&gt;
-&lt;p&gt;再po一个在知乎上的回答，虽然也是我摘抄，但是应该还是很有作用的，以前也是根据这个回答作出调整的，挺有用的。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.zhihu.com/question/20808486/answer/16798927?group_id=713565156029779968#comment-134664661&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;当熬夜成为习惯怎么办?&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;附上每天的执行记录&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;日期&lt;/th&gt;
-&lt;th&gt;执行&lt;/th&gt;
-&lt;th&gt;完成度&lt;/th&gt;
-&lt;th&gt;反思&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;2016-05-11&lt;/td&gt;
-&lt;td&gt;√中午饭后散步 √7分钟锻炼 √11点睡觉 √没有失眠&lt;/td&gt;
-&lt;td&gt;80%&lt;/td&gt;
-&lt;td&gt;饭后半小时以上散步+出汗有效果&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2016-05-12&lt;/td&gt;
-&lt;td&gt;√中午饭后散步 √7分钟锻炼 ×11点睡觉 ×没有失眠 失眠到1am（40%）&lt;/td&gt;
-&lt;td&gt;60%&lt;/td&gt;
-&lt;td&gt;坚持散步，睡前别玩手机&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2016-05-13&lt;/td&gt;
-&lt;td&gt;×中午饭后散步 √7分钟锻炼 ×11点睡觉 ×没有失眠 失眠到3am（20%）&lt;/td&gt;
-&lt;td&gt;20%&lt;/td&gt;
-&lt;td&gt;周末也不能懈怠！！！&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2016-05-14&lt;/td&gt;
-&lt;td&gt;×中午饭后散步 √7分钟锻炼 ×11点睡觉 ×没有失眠 失眠到3am（20%）&lt;/td&gt;
-&lt;td&gt;20%&lt;/td&gt;
-&lt;td&gt;周末也不能懈怠！！！&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2016-05-15&lt;/td&gt;
-&lt;td&gt;×中午饭后散步 √7分钟锻炼 ×11点睡觉 ×没有失眠 失眠到3am（20%）&lt;/td&gt;
-&lt;td&gt;20%&lt;/td&gt;
-&lt;td&gt;周末也不能懈怠！！！&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2016-05-16&lt;/td&gt;
-&lt;td&gt;×中午饭后散步 ×7分钟锻炼 ×11点睡觉 ×失眠到1点（60%）&lt;/td&gt;
-&lt;td&gt;60%&lt;/td&gt;
-&lt;td&gt;加班调整&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2016-05-17&lt;/td&gt;
-&lt;td&gt;×中午饭后散步 ×7分钟锻炼 ×11点睡觉 ×失眠到1点（60%）&lt;/td&gt;
-&lt;td&gt;60%&lt;/td&gt;
-&lt;td&gt;加班调整&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;去看过医生了，医生建议运动最好是微微出汗，不要过度。&lt;br&gt;如果前一天晚上失眠，第二天白天千万不要睡午觉，也不要休息！撑到晚上9点，10点以后再休息！这样，第二天才不会再继续失眠！&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最近晚睡成了一种习惯，以前偶尔失眠只是到1点2点，现在动不动就到了4点5点，甚至6点。我觉得我需要正视这个问题了，已经快持续两个月了，需要强烈地改变现状。&lt;br&gt;前期是因为失恋导致的，现在成了一种习惯。&lt;br&gt;现在制订改善方案：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;晚上22点，关闭w
-    
-    </summary>
-    
-      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-      <category term="失眠" scheme="http://yoursite.com/tags/%E5%A4%B1%E7%9C%A0/"/>
-    
-      <category term="晚睡" scheme="http://yoursite.com/tags/%E6%99%9A%E7%9D%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>XPath选择器相关</title>
-    <link href="http://yoursite.com/2016/05/10/XPath%E9%80%89%E6%8B%A9%E5%99%A8%E7%9B%B8%E5%85%B3/"/>
-    <id>http://yoursite.com/2016/05/10/XPath选择器相关/</id>
-    <published>2016-05-10T07:29:43.000Z</published>
-    <updated>2016-05-10T07:30:47.000Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;strong&gt;    1. 选择某一个属性&lt;/strong&gt;&lt;br&gt;&lt;code&gt;next_selector=response.xpath(&amp;#39;//*[contains(@class,&amp;quot;zm-invite-pager&amp;quot;)]/span/a/@href&amp;#39;).extract()&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;对于某一个class拥有两部分的时候，同样的方法：&lt;br&gt;&lt;code&gt;hash_id = &amp;#39;&amp;#39;.join(selector.xpath(&amp;#39;//div[@class=&amp;quot;zm-profile-header-op-btns clearfix&amp;quot;]/button/@data-id&amp;#39;).extract())&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;参考：&lt;br&gt;&lt;a href=&quot;https://github.com/javachen/scrapy-zhihu-github/blob/master/zhihu/spiders/zhihu_user_spider.py&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/javachen/scrapy-zhihu-github/blob/master/zhihu/spiders/zhihu_user_spider.py&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;    1. 选择某一个属性&lt;/strong&gt;&lt;br&gt;&lt;code&gt;next_selector=response.xpath(&amp;#39;//*[contains(@class,&amp;quot;zm-invite-pager&amp;quot;)]/span/a/@href
-    
-    </summary>
-    
-    
-      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
-    
-      <category term="xpath" scheme="http://yoursite.com/tags/xpath/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo相关操作</title>
-    <link href="http://yoursite.com/2016/05/10/hexo%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
-    <id>http://yoursite.com/2016/05/10/hexo相关操作/</id>
-    <published>2016-05-10T07:18:21.000Z</published>
-    <updated>2016-05-12T00:52:33.000Z</updated>
-    
-    <content type="html">&lt;p&gt;1.Markdown相关操作 &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;markdown中插入图片的图片路径&lt;br&gt;在source中建立文件夹imgs，然后路径直接写/imgs/path/name.jpg 就可以了&lt;br&gt;&lt;code&gt;![图片标题](图片地址)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;插入链接&lt;br&gt;&lt;code&gt;[链接标题](链接)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;插入表格&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;| Tables        | Are           | Cool  |  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| ------------- |-------------- | ------|  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| col 3 is      | right-aligned | $1600 |  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| col 2 is      | centered      |   $12 | &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| zebra stripes | are neat      |    $1 |&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;效果如下：&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Tables&lt;/th&gt;
-&lt;th&gt;Are&lt;/th&gt;
-&lt;th&gt;Cool&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;col 3 is&lt;/td&gt;
-&lt;td&gt;right-aligned&lt;/td&gt;
-&lt;td&gt;$1600&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;col 2 is&lt;/td&gt;
-&lt;td&gt;centered&lt;/td&gt;
-&lt;td&gt;$12&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;zebra stripes&lt;/td&gt;
-&lt;td&gt;are neat&lt;/td&gt;
-&lt;td&gt;$1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;ol&gt;
-&lt;li&gt;hexo命令&lt;br&gt;hexo g -&amp;gt;生成页面&lt;br&gt;hexo d -&amp;gt;deploy到服务器&lt;br&gt;hexo d -g -&amp;gt;生成页面的同时部署到服务器&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;1.Markdown相关操作 &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;markdown中插入图片的图片路径&lt;br&gt;在source中建立文件夹imgs，然后路径直接写/imgs/path/name.jpg 就可以了&lt;br&gt;&lt;code&gt;![图片标题](图片地址)&lt;/code&gt;&lt;/li&gt;
-&lt;
-    
-    </summary>
-    
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   

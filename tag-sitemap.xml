@@ -44,13 +44,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/scrapy/</loc>
-        <lastmod>2016-05-13T02:36:42.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/tags/yield/</loc>
         <lastmod>2016-05-16T01:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -81,13 +74,6 @@
     <url>
         <loc>http://yoursite.com/tags/d3js/</loc>
         <lastmod>2016-05-20T03:46:13.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/tags/error/</loc>
-        <lastmod>2016-05-20T03:57:31.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -128,13 +114,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/tools/</loc>
-        <lastmod>2016-05-24T00:21:32.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/tags/virtualenv/</loc>
         <lastmod>2016-05-24T00:21:32.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -156,8 +135,36 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/tags/scrapy/</loc>
+        <lastmod>2016-06-01T01:38:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/tools/</loc>
+        <lastmod>2016-06-01T01:44:10.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/error/</loc>
+        <lastmod>2016-06-01T02:42:17.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/hpux/</loc>
+        <lastmod>2016-06-01T02:42:17.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://yoursite.com/tags/MongoDB/</loc>
-        <lastmod>2016-05-25T02:49:42.000Z</lastmod>
+        <lastmod>2016-06-24T03:36:14.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
