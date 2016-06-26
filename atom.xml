@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-06-26T01:57:45.000Z</updated>
+  <updated>2016-06-26T02:30:57.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,13 +20,15 @@
     <link href="http://yoursite.com/2016/06/26/Surge%E4%BD%8E%E4%BB%B7%E8%B4%AD%E4%B9%B0-%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3-%E5%8E%BB%E5%B9%BF%E5%91%8A/"/>
     <id>http://yoursite.com/2016/06/26/Surge低价购买-配置详解-去广告/</id>
     <published>2016-06-26T01:19:17.000Z</published>
-    <updated>2016-06-26T01:57:45.000Z</updated>
+    <updated>2016-06-26T02:30:57.000Z</updated>
     
     <content type="html">&lt;p&gt;Surge 在App Store 原价￥648&lt;br&gt;现在分享给大家 ￥15 （提供下载）&lt;br&gt;&lt;img src=&quot;http://two.yt/images/2016/06/25/mgwm.png&quot; alt=&quot;Surge原价648&quot;&gt;&lt;/p&gt;
 &lt;p&gt;下载Surge能干嘛？&lt;br&gt;最简单的功能就是：&lt;strong&gt;作为VPN工具，屏蔽视频广告（各大视频网站，如优酷、爱奇艺、乐视广告都可以被屏蔽）&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;http://two.yt/images/2016/06/25/6397.png&quot; alt=&quot;屏蔽各大app视频广告&quot;&gt;&lt;/p&gt;
-&lt;p&gt;如何购买？&lt;br&gt;购买链接：&lt;br&gt;&lt;a href=&quot;http://weidian.com/item.html?itemID=1888881468&amp;amp;code=04155ina1Zvm0V1YClma18gana155inC&amp;amp;state=H5WXshare&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Surge购买&lt;/a&gt; &lt;/p&gt;
-&lt;p&gt;如何使用？&lt;br&gt;购买安装好surge之后，打开左上角按钮，点击download configuration from URL&lt;br&gt;&lt;img src=&quot;http://two.yt/images/2016/06/25/3YNb.jpg&quot; alt=&quot;配置去广告&quot;&gt;&lt;br&gt;复制粘贴以下链接：&lt;br&gt;&lt;code&gt;http://abclite.cn/Abclite_ADB.conf&lt;/code&gt;&lt;br&gt;不需要任何修改，直接可以去除APP中各种广告，例如腾讯视频中播放电影、电视剧等视频前的广告，方法很简单直接参照最后一步操作即可。&lt;/p&gt;
-&lt;p&gt;如果需要翻墙，怎么做？&lt;br&gt;可能需要购买ShadowSocks账号，以下简称ss&lt;br&gt;&lt;a href=&quot;https://portal.shadowsocks.com/aff.php?aff=6996&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ShadowSocks购买链接&lt;/a&gt;&lt;br&gt;普通单用户：不限流量，单用户，10条线路可选 转为RMB大约是107元/年，比国内大多VPN要便宜，看youtube完全不会卡，速度很快&lt;br&gt;&lt;img src=&quot;http://two.yt/images/2016/06/25/oKwG.png&quot; alt=&quot;ShadowSocks价格&quot;&gt;&lt;br&gt;更多Surge功能：&lt;br&gt;截获 iOS 上的所有应用程序的 HTTP/HTTPS/TCP 流量，将其重定向到 HTTP/HTTPS/SOCK5 代理服务器转发。&lt;br&gt;重载 iOS 蜂窝网络下的 DNS 服务器配置，使得 iOS 设备工作在蜂窝网络之下时，开发者也能够配置 DNS 服务器。记录设备所发出/接收的 HTTP 请求/应答首部信息。&lt;br&gt;配置基于 domain, domain suffix, domain keyword, CIDR IP 以及 GeoIP 的过滤规则。对设备上 WIFI、蜂窝网络以及代理连接会话的流量进行统计以及测速。&lt;br&gt;从 URL 或 iTunes 导入/导出配置文件。重度使用场景下有很高的性能以及适应性。&lt;br&gt;基于 domain 规则屏蔽广告。完全兼容蜂窝网络。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如何购买？&lt;/strong&gt;&lt;br&gt;购买链接：&lt;br&gt;&lt;a href=&quot;http://weidian.com/item.html?itemID=1888881468&amp;amp;code=04155ina1Zvm0V1YClma18gana155inC&amp;amp;state=H5WXshare&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Surge购买&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如何使用？&lt;/strong&gt;&lt;br&gt;购买安装好surge之后，打开左上角按钮，点击download configuration from URL&lt;br&gt;&lt;img src=&quot;http://two.yt/images/2016/06/25/W7V6.jpg&quot; alt=&quot;配置去广告&quot;&gt;&lt;/p&gt;
+&lt;p&gt;复制粘贴以下链接：&lt;br&gt;&lt;code&gt;http://abclite.cn/Abclite_ADB.conf&lt;/code&gt;&lt;br&gt;不需要任何修改，直接可以去除APP中各种广告，例如腾讯视频中播放电影、电视剧等视频前的广告，方法很简单直接参照最后一步操作即可。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果需要翻墙，怎么做？  &lt;/strong&gt;&lt;br&gt;可能需要购买ShadowSocks账号，以下简称ss&lt;br&gt;&lt;a href=&quot;https://portal.shadowsocks.com/aff.php?aff=6996&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ShadowSocks购买链接&lt;/a&gt;&lt;br&gt;普通单用户：不限流量，单用户，10条线路可选 转为RMB大约是107元/年，比国内大多VPN要便宜，看youtube完全不会卡，速度很快&lt;br&gt;&lt;img src=&quot;http://two.yt/images/2016/06/25/oKwG.png&quot; alt=&quot;ShadowSocks价格&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;更多Surge功能： &lt;/strong&gt;&lt;br&gt;截获 iOS 上的所有应用程序的 HTTP/HTTPS/TCP 流量，将其重定向到 HTTP/HTTPS/SOCK5 代理服务器转发。&lt;br&gt;重载 iOS 蜂窝网络下的 DNS 服务器配置，使得 iOS 设备工作在蜂窝网络之下时，开发者也能够配置 DNS 服务器。记录设备所发出/接收的 HTTP 请求/应答首部信息。&lt;br&gt;配置基于 domain, domain suffix, domain keyword, CIDR IP 以及 GeoIP 的过滤规则。对设备上 WIFI、蜂窝网络以及代理连接会话的流量进行统计以及测速。&lt;br&gt;从 URL 或 iTunes 导入/导出配置文件。重度使用场景下有很高的性能以及适应性。&lt;br&gt;基于 domain 规则屏蔽广告。完全兼容蜂窝网络。&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -140,9 +142,9 @@
     </summary>
     
     
-      <category term="error" scheme="http://yoursite.com/tags/error/"/>
-    
       <category term="hpux" scheme="http://yoursite.com/tags/hpux/"/>
+    
+      <category term="error" scheme="http://yoursite.com/tags/error/"/>
     
   </entry>
   
@@ -218,9 +220,9 @@
     
       <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
     
-      <category term="virtualenv" scheme="http://yoursite.com/tags/virtualenv/"/>
-    
       <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+      <category term="virtualenv" scheme="http://yoursite.com/tags/virtualenv/"/>
     
   </entry>
   
