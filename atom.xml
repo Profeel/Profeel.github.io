@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-06-24T03:36:14.000Z</updated>
+  <updated>2016-06-26T01:40:08.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Surge低价购买 配置详解 去广告</title>
+    <link href="http://yoursite.com/2016/06/26/Surge%E4%BD%8E%E4%BB%B7%E8%B4%AD%E4%B9%B0-%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3-%E5%8E%BB%E5%B9%BF%E5%91%8A/"/>
+    <id>http://yoursite.com/2016/06/26/Surge低价购买-配置详解-去广告/</id>
+    <published>2016-06-26T01:19:17.000Z</published>
+    <updated>2016-06-26T01:40:08.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Surge 在App Store 原价￥648&lt;br&gt;现在分享给大家 ￥15 （提供下载）&lt;/p&gt;
+&lt;p&gt;下载Surge能干嘛？&lt;br&gt;最简单的功能就是：&lt;strong&gt;作为VPN工具，屏蔽视频广告（各大视频网站，如优酷、爱奇艺、乐视广告都可以被屏蔽）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如何购买？&lt;br&gt;购买链接：&lt;br&gt;&lt;a href=&quot;http://weidian.com/item.html?itemID=1888881468&amp;amp;code=04155ina1Zvm0V1YClma18gana155inC&amp;amp;state=H5WXshare&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Surge购买&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;如何使用？&lt;br&gt;购买安装好surge之后，打开左上角按钮，点击download configuration from URL&lt;br&gt;复制粘贴以下链接：&lt;br&gt;&lt;code&gt;http://abclite.cn/Abclite_ADB.conf&lt;/code&gt;&lt;br&gt;不需要任何修改，直接可以去除APP中各种广告，例如腾讯视频中播放电影、电视剧等视频前的广告，方法很简单直接参照最后一步操作即可。&lt;/p&gt;
+&lt;p&gt;如果需要翻墙，怎么做？&lt;br&gt;可能需要购买ShadowSocks账号，以下简称ss&lt;br&gt;&lt;a href=&quot;https://portal.shadowsocks.com/aff.php?aff=6996&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ShadowSocks购买链接&lt;/a&gt;&lt;br&gt;普通单用户：不限流量，单用户，10条线路可选 转为RMB大约是107元/年，比国内大多VPN要便宜，看youtube完全不会卡，速度很快&lt;/p&gt;
+&lt;p&gt;更多Surge功能：&lt;br&gt;截获 iOS 上的所有应用程序的 HTTP/HTTPS/TCP 流量，将其重定向到 HTTP/HTTPS/SOCK5 代理服务器转发。&lt;br&gt;重载 iOS 蜂窝网络下的 DNS 服务器配置，使得 iOS 设备工作在蜂窝网络之下时，开发者也能够配置 DNS 服务器。记录设备所发出/接收的 HTTP 请求/应答首部信息。&lt;br&gt;配置基于 domain, domain suffix, domain keyword, CIDR IP 以及 GeoIP 的过滤规则。对设备上 WIFI、蜂窝网络以及代理连接会话的流量进行统计以及测速。&lt;br&gt;从 URL 或 iTunes 导入/导出配置文件。重度使用场景下有很高的性能以及适应性。&lt;br&gt;基于 domain 规则屏蔽广告。完全兼容蜂窝网络。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Surge 在App Store 原价￥648&lt;br&gt;现在分享给大家 ￥15 （提供下载）&lt;/p&gt;
+&lt;p&gt;下载Surge能干嘛？&lt;br&gt;最简单的功能就是：&lt;strong&gt;作为VPN工具，屏蔽视频广告（各大视频网站，如优酷、爱奇艺、乐视广告都可以被屏蔽）&lt;/strong&gt;&lt;/
+    
+    </summary>
+    
+    
+      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
+    
+      <category term="视频广告屏蔽" scheme="http://yoursite.com/tags/%E8%A7%86%E9%A2%91%E5%B9%BF%E5%91%8A%E5%B1%8F%E8%94%BD/"/>
+    
+      <category term="surge" scheme="http://yoursite.com/tags/surge/"/>
+    
+  </entry>
   
   <entry>
     <title>MongoDB2.75之后删除冗余文档</title>
@@ -601,9 +632,9 @@
     </summary>
     
     
-      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
-    
       <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
+    
+      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
     
   </entry>
   
@@ -653,71 +684,6 @@
     
     
       <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>《超级时间整理书》笔记</title>
-    <link href="http://yoursite.com/2016/05/11/%E3%80%8A%E8%B6%85%E7%BA%A7%E6%97%B6%E9%97%B4%E6%95%B4%E7%90%86%E4%B9%A6%E3%80%8B%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2016/05/11/《超级时间整理书》笔记/</id>
-    <published>2016-05-11T09:29:17.000Z</published>
-    <updated>2016-05-11T14:43:56.000Z</updated>
-    
-    <content type="html">&lt;ul&gt;
-&lt;li&gt;提前一天花15分钟规划第二天需要做的事情&lt;/li&gt;
-&lt;li&gt;记录每个小时所作的事情&lt;/li&gt;
-&lt;li&gt;设定每个小时的闹钟&lt;/li&gt;
-&lt;li&gt;找个朋友一起做&lt;/li&gt;
-&lt;li&gt;给自己创建一个奖励计划&lt;/li&gt;
-&lt;li&gt;把时间表放在一个可以看到的地方&lt;/li&gt;
-&lt;li&gt;马上开始&lt;/li&gt;
-&lt;li&gt;丢掉不需要的东西，不要舍不得丢&lt;/li&gt;
-&lt;li&gt;为自己的时间估值&lt;/li&gt;
-&lt;li&gt;买个个高质量的储物盒，存放那些真正需要存放的东西&lt;/li&gt;
-&lt;li&gt;清理杂物的方法：&lt;ul&gt;
-&lt;li&gt;丢弃：果断丢弃，定期清理需要丢弃的东西，避免浪费时间在垃圾的东西上&lt;/li&gt;
-&lt;li&gt;归档：被归档的90%的纸张都是无法用到的，或者直接电子化纸张&lt;/li&gt;
-&lt;li&gt;转嫁：委托给其他人做，朋友或者家人，但是需要如何开口&lt;ul&gt;
-&lt;li&gt;当你向别人发出委托请求时，标明原因，使用“因为”，大大会提高你的委托的成功率&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;整理衣柜：80%的时间穿的衣服只有那20%的衣服&lt;/li&gt;
-&lt;li&gt;给鞋子拍照片，贴在鞋盒子上，方便找到&lt;/li&gt;
-&lt;li&gt;解决拖延症：立即行动！&lt;/li&gt;
-&lt;li&gt;当一份任务比较难的时候，可以分为简单的任务，然后做完一小部分就给一个奖励&lt;/li&gt;
-&lt;li&gt;给任务一个期限，不要给出一个没有时间限制的任务&lt;/li&gt;
-&lt;li&gt;一开始计划不要太多，不要计划得太大，试着简单一点儿，比如去健身房，不要开始的时候就要求每天都去，一星期去两天就是一个简单的开始&lt;/li&gt;
-&lt;li&gt;待办事项是没错的，每天5件，只是最重要的5件。时间久了就是聚沙成塔,开始尝试的时候可以选择3件最重要的事情，并且为这些事情做好时间段规划&lt;/li&gt;
-&lt;li&gt;把待办的事变成必须要做的事情。界定清洗的目标是生活的哥哥方面取得成功的关键。&lt;/li&gt;
-&lt;li&gt;列一个“不办事项”，撇开那些不必浪费时间的事情&lt;/li&gt;
-&lt;li&gt;避免说闲话，逃避说闲话的人&lt;/li&gt;
-&lt;li&gt;如果沉迷社交网络或者网络游戏，那么起身，关闭电脑，离开电脑或者手机，对自己说：“你又沉迷这件事了，快停止！做点有用的事情吧，现在就行动”&lt;/li&gt;
-&lt;li&gt;为自己的时间估值，算自己的时薪，以一种新的眼光看待自己的时间&lt;/li&gt;
-&lt;li&gt;节约会议时间：&lt;ul&gt;
-&lt;li&gt;需要1个小时的会议，如果设置在整点过一刻开始，可能会节约15分钟&lt;/li&gt;
-&lt;li&gt;会议重要的是结果而不是听别人的声音&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;提前一天花15分钟规划第二天需要做的事情&lt;/li&gt;
-&lt;li&gt;记录每个小时所作的事情&lt;/li&gt;
-&lt;li&gt;设定每个小时的闹钟&lt;/li&gt;
-&lt;li&gt;找个朋友一起做&lt;/li&gt;
-&lt;li&gt;给自己创建一个奖励计划&lt;/li&gt;
-&lt;li&gt;把时间表放在一个可以看到的地方&lt;/li&gt;
-&lt;l
-    
-    </summary>
-    
-    
-      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
