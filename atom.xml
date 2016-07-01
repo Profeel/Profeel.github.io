@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-06-26T02:53:22.000Z</updated>
+  <updated>2016-07-01T03:08:06.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Surge相关配置</title>
+    <link href="http://yoursite.com/2016/07/01/Surge%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2016/07/01/Surge相关配置/</id>
+    <published>2016-07-01T02:51:30.000Z</published>
+    <updated>2016-07-01T03:08:06.000Z</updated>
+    
+    <content type="html">&lt;p&gt;没有APP的朋友，可以加我微信Profeel 15元提供下载包更新&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. 如何配置Surge2.0版本&lt;/strong&gt;&lt;br&gt;打开Surge&lt;br&gt;1)点击config–&amp;gt;&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-01_10:55:55.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;2)下载配置–&amp;gt;将配置的URL链接复制进去就可以&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-01_10:56:11.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;分享几个配置：&lt;br&gt;去视频广告配置：&lt;code&gt;http://abclite.cn/Abclite_ADB.conf&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Hosts 列表，按照 Surge 的配置文件规则生成的，每3天更新一次，欢迎使用！无需再配置代理服务器，支持 Wikipedia、Google、Facebook、Twitter、Instagram等–&amp;gt;&lt;br&gt;&lt;code&gt;https://coding.net/u/ifyour/p/hosts-for-Surge/git/raw/master/hosts.conf&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;3)打开VPN–&amp;gt;&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-01_10:56:21.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;没有APP的朋友，可以加我微信Profeel 15元提供下载包更新&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. 如何配置Surge2.0版本&lt;/strong&gt;&lt;br&gt;打开Surge&lt;br&gt;1)点击config–&amp;gt;&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1
+    
+    </summary>
+    
+    
+      <category term="surge" scheme="http://yoursite.com/tags/surge/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NodeBB安装（1）</title>
+    <link href="http://yoursite.com/2016/06/28/NodeBB%E5%AE%89%E8%A3%85%EF%BC%881%EF%BC%89/"/>
+    <id>http://yoursite.com/2016/06/28/NodeBB安装（1）/</id>
+    <published>2016-06-28T00:58:51.000Z</published>
+    <updated>2016-06-28T00:58:51.000Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Surge低价购买 配置详解 去广告</title>
@@ -41,9 +83,9 @@
     
       <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
     
-      <category term="视频广告屏蔽" scheme="http://yoursite.com/tags/%E8%A7%86%E9%A2%91%E5%B9%BF%E5%91%8A%E5%B1%8F%E8%94%BD/"/>
-    
       <category term="surge" scheme="http://yoursite.com/tags/surge/"/>
+    
+      <category term="视频广告屏蔽" scheme="http://yoursite.com/tags/%E8%A7%86%E9%A2%91%E5%B9%BF%E5%91%8A%E5%B1%8F%E8%94%BD/"/>
     
       <category term="优酷广告" scheme="http://yoursite.com/tags/%E4%BC%98%E9%85%B7%E5%B9%BF%E5%91%8A/"/>
     
@@ -220,9 +262,9 @@
     
       <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
     
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
       <category term="virtualenv" scheme="http://yoursite.com/tags/virtualenv/"/>
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
     
   </entry>
   
@@ -644,55 +686,6 @@
     
     
       <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
-    
-      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Scrapy ItemLoader返回的是列表如何选择第一个</title>
-    <link href="http://yoursite.com/2016/05/12/Scrapy-ItemLoader%E8%BF%94%E5%9B%9E%E7%9A%84%E6%98%AF%E5%88%97%E8%A1%A8%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E7%AC%AC%E4%B8%80%E4%B8%AA/"/>
-    <id>http://yoursite.com/2016/05/12/Scrapy-ItemLoader返回的是列表如何选择第一个/</id>
-    <published>2016-05-12T03:46:26.000Z</published>
-    <updated>2016-05-12T03:51:25.000Z</updated>
-    
-    <content type="html">&lt;p&gt;在items.py中加入：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;from scrapy.loader.processors import TakeFirst&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;......&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	# 修改为以下内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    followees = Field(output_processor=TakeFirst())&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;其他的不用改变，在spiders中的代码不需要改变&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;待解决：问题是第二个怎么选以及之后的几个？&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在items.py中加入：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;
-    
-    </summary>
-    
-    
-      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Scrapy ItemLoader的使用</title>
-    <link href="http://yoursite.com/2016/05/12/Scrapy-ItemLoader%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>http://yoursite.com/2016/05/12/Scrapy-ItemLoader的使用/</id>
-    <published>2016-05-12T00:58:22.000Z</published>
-    <updated>2016-05-12T03:46:29.000Z</updated>
-    
-    <content type="html">&lt;p&gt;通过ItemLoader能更加简洁地表达以及操作&lt;br&gt;下面介绍一下使用方法：&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;通过ItemLoader能更加简洁地表达以及操作&lt;br&gt;下面介绍一下使用方法：&lt;/p&gt;
-
-    
-    </summary>
-    
     
       <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
     
