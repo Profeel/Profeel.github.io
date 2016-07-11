@@ -219,9 +219,9 @@
     </summary>
     
     
-      <category term="error" scheme="http://yoursite.com/tags/error/"/>
-    
       <category term="hpux" scheme="http://yoursite.com/tags/hpux/"/>
+    
+      <category term="error" scheme="http://yoursite.com/tags/error/"/>
     
   </entry>
   
