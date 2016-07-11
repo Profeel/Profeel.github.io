@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-11T11:21:55.000Z</updated>
+  <updated>2016-07-11T12:35:03.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Pokemon锁区如何玩</title>
+    <link href="http://yoursite.com/2016/07/11/Pokemon%E9%94%81%E5%8C%BA%E5%A6%82%E4%BD%95%E7%8E%A9/"/>
+    <id>http://yoursite.com/2016/07/11/Pokemon锁区如何玩/</id>
+    <published>2016-07-11T12:34:12.000Z</published>
+    <updated>2016-07-11T12:35:03.000Z</updated>
+    
+    <content type="html">&lt;p&gt;众所周知，Pokemon Go大中华区被锁，无法玩到，很多玩家都要翻墙才能玩到，那么现在讲解一下如何才能玩到Pokemon Go&lt;/p&gt;
+&lt;p&gt;首先准备工具和材料：&lt;br&gt;1）翻墙工具 Surge –&amp;gt;app store下载 648￥ vpn服务器 ShadowSocks –&amp;gt; 107元/年&lt;br&gt;2）Google账户–&amp;gt;注册，已有用户请跳过&lt;br&gt;3) Pokemon客户端下载&lt;br&gt;2.使用同步助手或者iTools电脑客户端安装Pokemon Go&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-11_19:38:51.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;在证书中添加信任：&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-11_19:39:38.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;3.打开surge 选择us线路&lt;/p&gt;
+&lt;p&gt;4.打开Pokemon Go输入Google账户即可畅玩&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;众所周知，Pokemon Go大中华区被锁，无法玩到，很多玩家都要翻墙才能玩到，那么现在讲解一下如何才能玩到Pokemon Go&lt;/p&gt;
+&lt;p&gt;首先准备工具和材料：&lt;br&gt;1）翻墙工具 Surge –&amp;gt;app store下载 648￥ vpn服务器 ShadowSoc
+    
+    </summary>
+    
+    
+      <category term="PokemonGo" scheme="http://yoursite.com/tags/PokemonGo/"/>
+    
+  </entry>
   
   <entry>
     <title>如何注册Google账户</title>
@@ -219,9 +245,9 @@
     </summary>
     
     
-      <category term="hpux" scheme="http://yoursite.com/tags/hpux/"/>
-    
       <category term="error" scheme="http://yoursite.com/tags/error/"/>
+    
+      <category term="hpux" scheme="http://yoursite.com/tags/hpux/"/>
     
   </entry>
   
@@ -640,32 +666,6 @@
       <category term="python" scheme="http://yoursite.com/tags/python/"/>
     
       <category term="yield" scheme="http://yoursite.com/tags/yield/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Scrapy 爬虫中的一些技巧</title>
-    <link href="http://yoursite.com/2016/05/12/Scrapy-%E7%88%AC%E8%99%AB%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%8A%80%E5%B7%A7/"/>
-    <id>http://yoursite.com/2016/05/12/Scrapy-爬虫中的一些技巧/</id>
-    <published>2016-05-12T15:18:34.000Z</published>
-    <updated>2016-05-12T15:20:22.000Z</updated>
-    
-    <content type="html">&lt;ol&gt;
-&lt;li&gt;由于隐私设置的缘故，有些用户可能没有显示一些数据，故针对某些用户 xpath 表达式可能会抛出一些异常，如下面代码获取用户的名称：&lt;br&gt;&lt;code&gt;user[&amp;#39;nickname&amp;#39;] = selector.xpath(&amp;quot;//div[@class=&amp;#39;title-section ellipsis&amp;#39;]/a[@class=&amp;#39;name&amp;#39;]/text()&amp;quot;).extract()[0]&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;你可以将上面代码修改如下，以避免出现一个异常,避免采集的为空值所带来的异常：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;user[&amp;#39;nickname&amp;#39;] = &amp;#39;&amp;#39;.join(selector.xpath(&amp;quot;//div[@class=&amp;#39;title-section ellipsis&amp;#39;]/a[@class=&amp;#39;name&amp;#39;]/text()&amp;quot;).extract())&lt;/code&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;ol&gt;
-&lt;li&gt;由于隐私设置的缘故，有些用户可能没有显示一些数据，故针对某些用户 xpath 表达式可能会抛出一些异常，如下面代码获取用户的名称：&lt;br&gt;&lt;code&gt;user[&amp;#39;nickname&amp;#39;] = selector.xpath(&amp;quot;//div[@c
-    
-    </summary>
-    
-    
-      <category term="scrapy" scheme="http://yoursite.com/tags/scrapy/"/>
     
   </entry>
   
