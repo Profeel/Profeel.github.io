@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-12T04:41:17.000Z</updated>
+  <updated>2016-07-12T05:45:55.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/07/11/Pokemon%E9%94%81%E5%8C%BA%E5%A6%82%E4%BD%95%E7%8E%A9/"/>
     <id>http://yoursite.com/2016/07/11/Pokemon锁区如何玩/</id>
     <published>2016-07-11T12:34:12.000Z</published>
-    <updated>2016-07-12T04:41:17.000Z</updated>
+    <updated>2016-07-12T05:45:55.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;strong&gt;此教程仅适用于IOS客户端&lt;/strong&gt;&lt;br&gt;众所周知，Pokemon Go大中华区被锁，无法玩到，很多玩家都要翻墙才能玩到，那么现在讲解一下如何才能玩到Pokemon Go&lt;/p&gt;
 &lt;p&gt;首先准备工具和材料：&lt;br&gt;&lt;strong&gt;1）VPN&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;我在使用的是surge+ShadowSocks，当然也可以使用其他的VPN&lt;/strong&gt;&lt;br&gt;使用翻墙工具 Surge –&amp;gt;app store下载 648￥ 或者 Shadowrocket 6￥&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-12_11:47:38.jpg&quot; alt=&quot;&quot;&gt;+ vpn服务器 &lt;a href=&quot;https://portal.shadowsocks.com/aff.php?aff=6996&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ShadowSocks&lt;/a&gt; –&amp;gt; 107元/年&lt;/p&gt;
@@ -44,6 +44,8 @@
     
     
       <category term="PokemonGo" scheme="http://yoursite.com/tags/PokemonGo/"/>
+    
+      <category term="锁区如何玩，如何解决，Pokemon" scheme="http://yoursite.com/tags/%E9%94%81%E5%8C%BA%E5%A6%82%E4%BD%95%E7%8E%A9%EF%BC%8C%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%EF%BC%8CPokemon/"/>
     
   </entry>
   
