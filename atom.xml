@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-11T12:38:21.000Z</updated>
+  <updated>2016-07-12T01:17:39.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,34 +16,14 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test</title>
-    <link href="http://yoursite.com/2016/07/11/test/"/>
-    <id>http://yoursite.com/2016/07/11/test/</id>
-    <published>2016-07-11T12:38:16.000Z</published>
-    <updated>2016-07-11T12:38:21.000Z</updated>
-    
-    <content type="html">&lt;p&gt;ssss&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;ssss&lt;/p&gt;
-
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Pokemon锁区如何玩</title>
     <link href="http://yoursite.com/2016/07/11/Pokemon%E9%94%81%E5%8C%BA%E5%A6%82%E4%BD%95%E7%8E%A9/"/>
     <id>http://yoursite.com/2016/07/11/Pokemon锁区如何玩/</id>
     <published>2016-07-11T12:34:12.000Z</published>
-    <updated>2016-07-11T12:35:03.000Z</updated>
+    <updated>2016-07-12T01:17:39.000Z</updated>
     
     <content type="html">&lt;p&gt;众所周知，Pokemon Go大中华区被锁，无法玩到，很多玩家都要翻墙才能玩到，那么现在讲解一下如何才能玩到Pokemon Go&lt;/p&gt;
-&lt;p&gt;首先准备工具和材料：&lt;br&gt;1）翻墙工具 Surge –&amp;gt;app store下载 648￥ vpn服务器 ShadowSocks –&amp;gt; 107元/年&lt;br&gt;2）Google账户–&amp;gt;注册，已有用户请跳过&lt;br&gt;3) Pokemon客户端下载&lt;br&gt;2.使用同步助手或者iTools电脑客户端安装Pokemon Go&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-11_19:38:51.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;首先准备工具和材料：&lt;br&gt;1）翻墙工具 Surge –&amp;gt;app store下载 648￥或者Shadowrocket 6￥ vpn服务器 ShadowSocks –&amp;gt; 107元/年&lt;br&gt;2）Google账户–&amp;gt;注册，已有用户请跳过&lt;br&gt;3) Pokemon客户端下载&lt;br&gt;2.使用同步助手或者iTools电脑客户端安装Pokemon Go&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-11_19:38:51.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;在证书中添加信任：&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-11_19:39:38.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;3.打开surge 选择us线路&lt;/p&gt;
 &lt;p&gt;4.打开Pokemon Go输入Google账户即可畅玩&lt;/p&gt;
@@ -52,7 +32,7 @@
     <summary type="html">
     
       &lt;p&gt;众所周知，Pokemon Go大中华区被锁，无法玩到，很多玩家都要翻墙才能玩到，那么现在讲解一下如何才能玩到Pokemon Go&lt;/p&gt;
-&lt;p&gt;首先准备工具和材料：&lt;br&gt;1）翻墙工具 Surge –&amp;gt;app store下载 648￥ vpn服务器 ShadowSoc
+&lt;p&gt;首先准备工具和材料：&lt;br&gt;1）翻墙工具 Surge –&amp;gt;app store下载 648￥或者Shadowrocket 6￥
     
     </summary>
     
@@ -652,6 +632,40 @@
     
     
       <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于yield函数的理解</title>
+    <link href="http://yoursite.com/2016/05/16/%E5%85%B3%E4%BA%8Eyield%E5%87%BD%E6%95%B0%E7%9A%84%E7%90%86%E8%A7%A3/"/>
+    <id>http://yoursite.com/2016/05/16/关于yield函数的理解/</id>
+    <published>2016-05-16T01:18:46.000Z</published>
+    <updated>2016-05-16T01:22:08.000Z</updated>
+    
+    <content type="html">&lt;p&gt;关于yield函数，&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;为了精通 yield ,你必须要理解：当你调用这个函数的时候，函数内部的代码并不立马执行 ，这个函数只是返回一个生成器对象，这有点蹊跷不是吗。&lt;br&gt;那么，函数内的代码什么时候执行呢？当你使用for进行迭代的时候&lt;/p&gt;
+&lt;p&gt;现在到了关键点了！&lt;/p&gt;
+&lt;p&gt;第一次迭代中你的函数会执行，从开始到达 yield 关键字，然后返回 yield 后的值作为第一次迭代的返回值. 然后，每次执行这个函数都会继续执行你在函数内部定义的那个循环的下一次，再返回那个值，直到没有可以返回的。&lt;/p&gt;
+&lt;p&gt;如果生成器内部没有定义 yield 关键字，那么这个生成器被认为成空的。这种情况可能因为是循环进行没了，或者是没有满足 if/else 条件。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;引用地址：&lt;a href=&quot;http://pyzh.readthedocs.io/en/latest/the-python-yield-keyword-explained.html#yield&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;3. (译)Python关键字yield的解释(stackoverflow)&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;关于yield函数，&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;为了精通 yield ,你必须要理解：当你调用这个函数的时候，函数内部的代码并不立马执行 ，这个函数只是返回一个生成器对象，这有点蹊跷不是吗。&lt;br&gt;那么，函数内的代码什么时候执行呢？当你使用for进行迭代的时候
+    
+    </summary>
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+      <category term="yield" scheme="http://yoursite.com/tags/yield/"/>
     
   </entry>
   
