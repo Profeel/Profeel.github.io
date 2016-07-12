@@ -234,14 +234,14 @@
 
     <url>
         <loc>http://yoursite.com/tags/PokemonGo/</loc>
-        <lastmod>2016-07-12T06:19:40.000Z</lastmod>
+        <lastmod>2016-07-12T07:36:34.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/tags/%E9%94%81%E5%8C%BA%E5%A6%82%E4%BD%95%E7%8E%A9%EF%BC%8C%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%EF%BC%8CPokemon/</loc>
-        <lastmod>2016-07-12T06:19:40.000Z</lastmod>
+        <lastmod>2016-07-12T07:36:34.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
