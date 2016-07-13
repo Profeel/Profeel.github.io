@@ -226,22 +226,43 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/PokemonGo/</loc>
-        <lastmod>2016-07-12T15:35:10.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/tags/%E9%94%81%E5%8C%BA%E5%A6%82%E4%BD%95%E7%8E%A9%EF%BC%8C%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%EF%BC%8CPokemon/</loc>
-        <lastmod>2016-07-12T15:35:10.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/tags/IBM/</loc>
         <lastmod>2016-07-13T00:38:33.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/PokemonGo/</loc>
+        <lastmod>2016-07-13T01:32:59.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/%E9%94%81%E5%8C%BA%E5%A6%82%E4%BD%95%E7%8E%A9/</loc>
+        <lastmod>2016-07-13T01:32:59.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3/</loc>
+        <lastmod>2016-07-13T01:32:59.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/Pokemon/</loc>
+        <lastmod>2016-07-13T01:32:59.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/PokemonGO/</loc>
+        <lastmod>2016-07-13T02:02:20.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

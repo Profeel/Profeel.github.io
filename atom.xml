@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-13T00:38:33.000Z</updated>
+  <updated>2016-07-13T02:02:20.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Pokemon Go 1.0.1更新内容介绍</title>
+    <link href="http://yoursite.com/2016/07/13/Pokemon-Go-1-0-1%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://yoursite.com/2016/07/13/Pokemon-Go-1-0-1更新内容介绍/</id>
+    <published>2016-07-13T01:57:36.000Z</published>
+    <updated>2016-07-13T02:02:20.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Pokemon Go更新：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当强退之后不用再次输入用户名和密码&lt;/li&gt;
+&lt;li&gt;增强了Pokemon训练师阵营账户登录进程稳定性&lt;/li&gt;
+&lt;li&gt;改进闪退问题&lt;/li&gt;
+&lt;li&gt;不必在需要Google账户的所有权限&lt;/li&gt;
+&lt;li&gt;IOS更新大小为 159MB&lt;/li&gt;
+&lt;li&gt;Android还未更新&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;App Store更新内容为：&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-13_09:49:41.jpg&quot; alt=&quot;Pokemon Go更新内容&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Pokemon Go更新：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当强退之后不用再次输入用户名和密码&lt;/li&gt;
+&lt;li&gt;增强了Pokemon训练师阵营账户登录进程稳定性&lt;/li&gt;
+&lt;li&gt;改进闪退问题&lt;/li&gt;
+&lt;li&gt;不必在需要Google账户的所有权限&lt;/li&gt;
+&lt;li&gt;IOS更新
+    
+    </summary>
+    
+    
+      <category term="PokemonGO" scheme="http://yoursite.com/tags/PokemonGO/"/>
+    
+  </entry>
   
   <entry>
     <title>IBM DS5300 Impending Drive Failure报错</title>
@@ -42,13 +78,13 @@
     <link href="http://yoursite.com/2016/07/11/Pokemon%E9%94%81%E5%8C%BA%E5%A6%82%E4%BD%95%E7%8E%A9/"/>
     <id>http://yoursite.com/2016/07/11/Pokemon锁区如何玩/</id>
     <published>2016-07-11T12:34:12.000Z</published>
-    <updated>2016-07-12T15:35:10.000Z</updated>
+    <updated>2016-07-13T01:32:59.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;strong&gt;此教程仅适用于IOS客户端&lt;/strong&gt;&lt;br&gt;众所周知，Pokemon Go大中华区被锁，无法玩到，很多玩家都要翻墙才能玩到，那么现在讲解一下如何才能玩到Pokemon Go&lt;/p&gt;
-&lt;p&gt;首先准备工具和材料：&lt;br&gt;&lt;strong&gt;1）VPN&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;我在使用的是surge+ShadowSocks，当然也可以使用其他的VPN&lt;/strong&gt;&lt;br&gt;使用翻墙工具 Surge –&amp;gt;app store下载 648￥ 或者 Shadowrocket 6￥&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-12_11:47:38.jpg&quot; alt=&quot;&quot;&gt;+ vpn服务器 &lt;a href=&quot;https://portal.shadowsocks.com/aff.php?aff=6996&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ShadowSocks&lt;/a&gt; –&amp;gt; 107元/年&lt;/p&gt;
+&lt;p&gt;首先准备工具和材料：&lt;br&gt;&lt;strong&gt;1）VPN&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;我在使用的是surge+ShadowSocks，当然也可以使用其他的VPN&lt;/strong&gt;&lt;br&gt;使用翻墙工具 Surge –&amp;gt;app store下载 648￥ 或者 Shadowrocket 6￥&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-12_11:47:38.jpg&quot; alt=&quot;&quot;&gt;+ vpn服务器–&amp;gt; &lt;a href=&quot;https://portal.shadowsocks.com/aff.php?aff=6996&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点击购买ShadowSocks&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-13_09:02:46.jpg&quot; alt=&quot;ShadowSocks套餐&quot;&gt;&lt;/p&gt;
 &lt;p&gt;或者&lt;strong&gt;其他VPN&lt;/strong&gt;，最好选择连接点VPN，避免代理地址经常变动，可能存在被封号的风险&lt;/p&gt;
 &lt;p&gt;2）&lt;a href=&quot;http://profeel.github.io/2016/07/11/%E5%A6%82%E4%BD%95%E6%B3%A8%E5%86%8CGoogle%E8%B4%A6%E6%88%B7/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Google账户注册&lt;/strong&gt;&lt;/a&gt;，已有用户请跳过&lt;/p&gt;
-&lt;p&gt;3) &lt;a href=&quot;http://pan.baidu.com/s/1i5HHFZB&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;在电脑上下载Pokemon客户端&lt;/strong&gt;&lt;/a&gt; 密码：9ee5&lt;br&gt;（此客户端经过破解，不需要再修改GPS）&lt;br&gt;这个定位会在每次打开的时候都会定位到旧金山联合广场北，问题就是官方可能会封号，所以，不怕封号的就来玩吧，毕竟国内不能玩和封号没有什么区别~&lt;/p&gt;
+&lt;p&gt;3) 在电脑上下载Pokemon客户端–&amp;gt;&lt;a href=&quot;http://pan.baidu.com/s/1i5HHFZB&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;点击下载&lt;/strong&gt;&lt;/a&gt; 密码：9ee5&lt;br&gt;（此客户端经过破解，不需要再修改GPS）&lt;br&gt;这个定位会在每次打开的时候都会定位到旧金山联合广场北，问题就是官方可能会封号，所以，不怕封号的就来玩吧，毕竟国内不能玩和封号没有什么区别~&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;4).使用同步助手或者iTools电脑客户端安装Pokemon Go&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-12_14:18:24.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;在证书(设置—&amp;gt;通用-&amp;gt;描述文件与设备管理)中添加信任：&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-12_14:18:58.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;5).打开surge 选择us线路&lt;/strong&gt;&lt;br&gt;—–&amp;gt;&lt;a href=&quot;http://profeel.github.io/2016/07/01/Surge%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Surges配置方法&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-12_11:52:43.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
@@ -67,7 +103,11 @@
     
       <category term="PokemonGo" scheme="http://yoursite.com/tags/PokemonGo/"/>
     
-      <category term="锁区如何玩，如何解决，Pokemon" scheme="http://yoursite.com/tags/%E9%94%81%E5%8C%BA%E5%A6%82%E4%BD%95%E7%8E%A9%EF%BC%8C%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%EF%BC%8CPokemon/"/>
+      <category term="锁区如何玩" scheme="http://yoursite.com/tags/%E9%94%81%E5%8C%BA%E5%A6%82%E4%BD%95%E7%8E%A9/"/>
+    
+      <category term="如何解决" scheme="http://yoursite.com/tags/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3/"/>
+    
+      <category term="Pokemon" scheme="http://yoursite.com/tags/Pokemon/"/>
     
   </entry>
   
@@ -384,13 +424,13 @@
     </summary>
     
     
-      <category term="IBM" scheme="http://yoursite.com/tags/IBM/"/>
-    
       <category term="error" scheme="http://yoursite.com/tags/error/"/>
     
       <category term="AIX" scheme="http://yoursite.com/tags/AIX/"/>
     
       <category term="DS5300" scheme="http://yoursite.com/tags/DS5300/"/>
+    
+      <category term="IBM" scheme="http://yoursite.com/tags/IBM/"/>
     
   </entry>
   
@@ -625,43 +665,6 @@
     
     
       <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git相关操作</title>
-    <link href="http://yoursite.com/2016/05/16/git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
-    <id>http://yoursite.com/2016/05/16/git相关操作/</id>
-    <published>2016-05-16T03:35:23.000Z</published>
-    <updated>2016-05-16T03:47:58.000Z</updated>
-    
-    <content type="html">&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;git init&lt;/code&gt;&lt;br&gt;这个命令会在当前目录下创建一个.git文件夹。 不要删除或者修改这个文件夹。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;git add .&lt;/code&gt;&lt;br&gt;将当前目录下的文件添加到git仓库&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;git commit -m &amp;quot;comment&amp;quot;&lt;/code&gt;&lt;br&gt;添加操作评论&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;git remote add origin github#address&lt;/code&gt;&lt;br&gt;将本地仓库添加到远程仓库&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;git pull origin master&lt;/code&gt;&lt;br&gt;将本地和master的改变合并到分支&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;git push origin master&lt;/code&gt;&lt;br&gt;将本地仓库提交到远程分支master&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;git init&lt;/code&gt;&lt;br&gt;这个命令会在当前目录下创建一个.git文件夹。 不要删除或者修改这个文件夹。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;git add .&lt;/code&gt;&lt;br&gt;将当前目录下的文件添加到git仓库&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="git" scheme="http://yoursite.com/tags/git/"/>
     
   </entry>
   
