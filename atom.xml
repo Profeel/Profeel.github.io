@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-13T02:02:20.000Z</updated>
+  <updated>2016-07-13T07:30:26.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,69 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ShadowSocks注册详解</title>
+    <link href="http://yoursite.com/2016/07/13/ShadowSocks%E6%B3%A8%E5%86%8C%E8%AF%A6%E8%A7%A3/"/>
+    <id>http://yoursite.com/2016/07/13/ShadowSocks注册详解/</id>
+    <published>2016-07-13T06:44:59.000Z</published>
+    <updated>2016-07-13T07:30:26.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;购买链接&quot;&gt;&lt;a href=&quot;#购买链接&quot; class=&quot;headerlink&quot; title=&quot;购买链接&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://portal.shadowsocks.com/aff.php?aff=6996&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;购买链接&lt;/strong&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h1 id=&quot;什么是ShadowSocks？&quot;&gt;&lt;a href=&quot;#什么是ShadowSocks？&quot; class=&quot;headerlink&quot; title=&quot;什么是ShadowSocks？&quot;&gt;&lt;/a&gt;什么是ShadowSocks？&lt;/h1&gt;&lt;p&gt;ShadowSocks是一个VPN服务，通过ShadowSocks可以访问国外一些不能访问的网站，如Google、Facebook、Twitter等网站；购买ShadowSocks服务，可以在各个平台通用，都可以翻墙，比如Windows、IOS、安卓、linux、浏览器插件、路由器等；购买之后，得到的是一个服务器账号和密码，需要通过其他工具配合使用，一次配置，持久使用&lt;/p&gt;
+&lt;h1 id=&quot;为什么选择ShadowSocks？&quot;&gt;&lt;a href=&quot;#为什么选择ShadowSocks？&quot; class=&quot;headerlink&quot; title=&quot;为什么选择ShadowSocks？&quot;&gt;&lt;/a&gt;为什么选择ShadowSocks？&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;便宜（8.95元/月，107.4每年）&lt;/li&gt;
+&lt;li&gt;不限流量（国内VPN限制流量）&lt;/li&gt;
+&lt;li&gt;网速快 （可看Youtube超清视频不卡顿）&lt;/li&gt;
+&lt;li&gt;稳定 （24H*7不断线）&lt;/li&gt;
+&lt;li&gt;安全&lt;/li&gt;
+&lt;li&gt;支持支付宝购买&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;免费的VPN存在什么风险？  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;可能存在盗取你的账号等信息（因为你的流量都要经过他VPN，所以你的账号也会通过他的免费服务器）&lt;/li&gt;
+&lt;li&gt;天下没有免费的午餐&lt;/li&gt;
+&lt;li&gt;不稳定&lt;/li&gt;
+&lt;li&gt;限时&lt;/li&gt;
+&lt;li&gt;限制流量&lt;/li&gt;
+&lt;li&gt;网速慢&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;如何购买？&quot;&gt;&lt;a href=&quot;#如何购买？&quot; class=&quot;headerlink&quot; title=&quot;如何购买？&quot;&gt;&lt;/a&gt;如何购买？&lt;/h1&gt;&lt;p&gt;因为这个官网也是被墙的，所以，你可能需要先通过其他免费的VPN来打开购买链接；&lt;br&gt;免费的VPN在IOS下推荐使用，GreenVPN、赛风VPN、VPN Master等；&lt;br&gt;购买地址–&amp;gt;&lt;a href=&quot;https://portal.shadowsocks.com/aff.php?aff=6996&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点击购买&lt;/a&gt;&lt;br&gt;官网是这个样子–&amp;gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-13_14:54:48.jpg&quot; alt=&quot;ShadowSocks官网&quot;&gt;&lt;br&gt;点击订购服务–&amp;gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-13_14:58:29.jpg&quot; alt=&quot;订购服务&quot;&gt;&lt;br&gt;填写一些相关信息–&amp;gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-13_15:01:34.jpg&quot; alt=&quot;相关信息&quot;&gt;&lt;br&gt;完成订购–&amp;gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-13_15:02:14.jpg&quot; alt=&quot;完成订购&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;如何使用？&quot;&gt;&lt;a href=&quot;#如何使用？&quot; class=&quot;headerlink&quot; title=&quot;如何使用？&quot;&gt;&lt;/a&gt;如何使用？&lt;/h1&gt;&lt;p&gt;到官网网站–&amp;gt;&lt;a href=&quot;https://portal.shadowsocks.com/clientarea.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;打开官网&lt;/a&gt;&lt;br&gt;登录–&amp;gt;客户中心–&amp;gt;您的有效产品/服务–&amp;gt;最下面–&amp;gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-13_15:13:09.jpg&quot; alt=&quot;点击二维码&quot;&gt;&lt;br&gt;保存二维码图片到手机或者直接拿手机扫描&lt;br&gt;&lt;strong&gt;IOS用户：&lt;/strong&gt;&lt;br&gt;在App Store中搜索ShadowRocket–&amp;gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-13_15:06:38.jpg&quot; alt=&quot;ShadowRocket&quot;&gt;&lt;br&gt;售价6元&lt;br&gt;&lt;strong&gt;安卓用户在Play市场搜索ShadowSocks&lt;/strong&gt;&lt;br&gt;打开Shadowrocket，点击左上角扫描的按钮–&amp;gt;&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-13_15:18:42.jpg&quot; alt=&quot;扫描&quot;&gt;&lt;br&gt;打开VPN–&amp;gt;&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-13_15:26:22.jpg&quot; alt=&quot;打开VPN&quot;&gt;&lt;br&gt;大功告成！！！&lt;br&gt;&lt;a href=&quot;https://portal.shadowsocks.com/aff.php?aff=6996&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;购买链接&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;购买链接&quot;&gt;&lt;a href=&quot;#购买链接&quot; class=&quot;headerlink&quot; title=&quot;购买链接&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://portal.shadowsocks.com/aff.php?aff=6996&quot; target=&quot;_blank&quot; 
+    
+    </summary>
+    
+    
+      <category term="ShadowSocks" scheme="http://yoursite.com/tags/ShadowSocks/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pokemon Go 攻略及一些常见问题详解</title>
+    <link href="http://yoursite.com/2016/07/13/Pokemon-Go-%E6%94%BB%E7%95%A5%E5%8F%8A%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%AF%A6%E8%A7%A3/"/>
+    <id>http://yoursite.com/2016/07/13/Pokemon-Go-攻略及一些常见问题详解/</id>
+    <published>2016-07-13T06:43:24.000Z</published>
+    <updated>2016-07-13T07:30:31.000Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="PokemonGo" scheme="http://yoursite.com/tags/PokemonGo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Pokemon Go 1.0.1更新内容介绍</title>
     <link href="http://yoursite.com/2016/07/13/Pokemon-Go-1-0-1%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9%E4%BB%8B%E7%BB%8D/"/>
     <id>http://yoursite.com/2016/07/13/Pokemon-Go-1-0-1更新内容介绍/</id>
     <published>2016-07-13T01:57:36.000Z</published>
-    <updated>2016-07-13T02:02:20.000Z</updated>
+    <updated>2016-07-13T02:09:20.000Z</updated>
     
     <content type="html">&lt;p&gt;Pokemon Go更新：&lt;/p&gt;
 &lt;ul&gt;
@@ -28,8 +86,6 @@
 &lt;li&gt;增强了Pokemon训练师阵营账户登录进程稳定性&lt;/li&gt;
 &lt;li&gt;改进闪退问题&lt;/li&gt;
 &lt;li&gt;不必在需要Google账户的所有权限&lt;/li&gt;
-&lt;li&gt;IOS更新大小为 159MB&lt;/li&gt;
-&lt;li&gt;Android还未更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;App Store更新内容为：&lt;br&gt;&lt;img src=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/2016-07-13_09:49:41.jpg&quot; alt=&quot;Pokemon Go更新内容&quot;&gt;&lt;/p&gt;
 </content>
@@ -42,7 +98,8 @@
 &lt;li&gt;增强了Pokemon训练师阵营账户登录进程稳定性&lt;/li&gt;
 &lt;li&gt;改进闪退问题&lt;/li&gt;
 &lt;li&gt;不必在需要Google账户的所有权限&lt;/li&gt;
-&lt;li&gt;IOS更新
+&lt;/ul&gt;
+&lt;p&gt;
     
     </summary>
     
@@ -424,13 +481,13 @@
     </summary>
     
     
+      <category term="IBM" scheme="http://yoursite.com/tags/IBM/"/>
+    
       <category term="error" scheme="http://yoursite.com/tags/error/"/>
     
       <category term="AIX" scheme="http://yoursite.com/tags/AIX/"/>
     
       <category term="DS5300" scheme="http://yoursite.com/tags/DS5300/"/>
-    
-      <category term="IBM" scheme="http://yoursite.com/tags/IBM/"/>
     
   </entry>
   
@@ -620,51 +677,6 @@
     
     
       <category term="MongoDB" scheme="http://yoursite.com/tags/MongoDB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Pycharm主题设置</title>
-    <link href="http://yoursite.com/2016/05/18/Pycharm%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE/"/>
-    <id>http://yoursite.com/2016/05/18/Pycharm主题设置/</id>
-    <published>2016-05-18T08:06:50.000Z</published>
-    <updated>2016-05-18T09:25:53.000Z</updated>
-    
-    <content type="html">&lt;p&gt;Pycharm的主题设置会影响到代码效率，特别是相关的颜色设定，设置为自己喜欢的颜色，高亮代码，有助于编程。&lt;br&gt;Pycharm主题下载网站：&lt;a href=&quot;http://color-themes.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;color-themes&lt;/a&gt;&lt;br&gt;设置方法：&lt;br&gt;file-&amp;gt;imort settings-&amp;gt;themes file&lt;br&gt;重启Pycharm，在Pycharm-&amp;gt;Perference-&amp;gt;Editor -&amp;gt; Colors &amp;amp; Fonts -&amp;gt;theme&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;另外，注册Pycharm在 &lt;a href=&quot;http://idea.lanyus.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;lanyus&lt;/a&gt;网站点击获得注册码&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Pycharm的主题设置会影响到代码效率，特别是相关的颜色设定，设置为自己喜欢的颜色，高亮代码，有助于编程。&lt;br&gt;Pycharm主题下载网站：&lt;a href=&quot;http://color-themes.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;
-    
-    </summary>
-    
-    
-      <category term="Pycharm tools" scheme="http://yoursite.com/tags/Pycharm-tools/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何找到Python的site-packages路径</title>
-    <link href="http://yoursite.com/2016/05/18/%E5%A6%82%E4%BD%95%E6%89%BE%E5%88%B0Python%E7%9A%84site-packages%E8%B7%AF%E5%BE%84/"/>
-    <id>http://yoursite.com/2016/05/18/如何找到Python的site-packages路径/</id>
-    <published>2016-05-18T02:37:40.000Z</published>
-    <updated>2016-05-18T02:39:03.000Z</updated>
-    
-    <content type="html">&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;In [22]: import sys&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;In [23]: print sys.path&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[&amp;apos;&amp;apos;, &amp;apos;/usr/local/bin&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/distribute-0.6.28-py2.7.egg&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/web.py-0.37-py2.7.egg&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/psutil-2.0.0-py2.7-macosx-10.11-intel.egg&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/pinax_blog-4.3.0-py2.7.egg&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/Pygments-2.1-py2.7.egg&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/MySQL_python-1.2.3-py2.7-macosx-10.11-intel.egg&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/Scrapy-1.0.4-py2.7.egg&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/service_identity-14.0.0-py2.7.egg&amp;apos;, &amp;apos;/Users/wangqi/Documents/workspace/tests/zhihu/src/pyv8&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python27.zip&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-darwin&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac/lib-scriptpackages&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-old&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-dynload&amp;apos;, &amp;apos;/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/PyObjC&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/PIL&amp;apos;, &amp;apos;/Library/Python/2.7/site-packages/IPython/extensions&amp;apos;, &amp;apos;/Users/wangqi/.ipython&amp;apos;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class
-    
-    </summary>
-    
-    
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
     
   </entry>
   

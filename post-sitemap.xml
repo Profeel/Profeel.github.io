@@ -7,8 +7,24 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/2016/07/13/Pokemon-Go-%E6%94%BB%E7%95%A5%E5%8F%8A%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%AF%A6%E8%A7%A3/</loc>
+        <lastmod>2016-07-13T07:30:31.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2016/07/13/ShadowSocks%E6%B3%A8%E5%86%8C%E8%AF%A6%E8%A7%A3/</loc>
+        <lastmod>2016-07-13T07:30:26.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite.com/2016/07/13/Pokemon-Go-1-0-1%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9%E4%BB%8B%E7%BB%8D/</loc>
-        <lastmod>2016-07-13T02:02:20.000Z</lastmod>
+        <lastmod>2016-07-13T02:09:20.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
