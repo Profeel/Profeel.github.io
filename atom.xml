@@ -521,13 +521,13 @@
     </summary>
     
     
+      <category term="IBM" scheme="http://yoursite.com/tags/IBM/"/>
+    
       <category term="error" scheme="http://yoursite.com/tags/error/"/>
     
       <category term="AIX" scheme="http://yoursite.com/tags/AIX/"/>
     
       <category term="DS5300" scheme="http://yoursite.com/tags/DS5300/"/>
-    
-      <category term="IBM" scheme="http://yoursite.com/tags/IBM/"/>
     
   </entry>
   
