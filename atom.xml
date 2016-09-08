@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-15T09:42:19.000Z</updated>
+  <updated>2016-09-08T15:48:40.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>论语之道</title>
+    <link href="http://yoursite.com/2016/09/08/%E8%AE%BA%E8%AF%AD%E4%B9%8B%E9%81%93/"/>
+    <id>http://yoursite.com/2016/09/08/论语之道/</id>
+    <published>2016-09-08T15:21:06.000Z</published>
+    <updated>2016-09-08T15:48:40.000Z</updated>
+    
+    <content type="html">&lt;p&gt;  为什么读起了《论语》，因为偶然在市图书馆翻看《季羡林谈人生》，里面有说到耄耋之际一些古语，觉得很有韵味，而又很有道理。感觉最近需要一些智者来指点生活中的一二，又无从说起。“生活不如意有八九，与人言说二三”，心中的苦闷只有自己知道，而身边的朋友知道的只有皮毛而已，所以，还是觉得应该寻求智者的开导，对于近期状态大有裨益。&lt;/p&gt;
+&lt;p&gt;  工作之后，坦然的心态越来越明显，觉得人生不过如此，并没有什么恐惧的新情况无法处理，或者新的人无法面对，又或者是往昔无法忘却，心中多了一种豁达。&lt;/p&gt;
+&lt;p&gt;  今天读完《于丹论语心得》，里面有说到，六十而耳顺，说得是人年纪到了六十，什么话都能听得进去，还有意思就是到了六十，应该能接受所有的好的或者坏的事情的发生，能明白好的事和坏的事为什么发生，比如极恶或者小人之道，这些发生的时候，心中不会泛起波澜，而是莞尔一笑，明白其中的仁与不仁。&lt;/p&gt;
+&lt;p&gt;  反观自身，我觉得是在我看完《权利的游戏》之后，里面的弑君者给我的印象很深，天下人都以他为耻，称他为弑君者，在君主背后捅刀子的人，但是很少人能理解他为什么弑君。在他背负君命，但君主令他杀死自己的父亲，杀死自己保卫的百姓，已经处于疯癫的状态的时候，他做出了他认为对的行为，然而，并没有得到全世界人的理解，只有他自己默默知道，这是对的，而忍辱偷生。仅仅有他最亲近的家人能理解这样的行为，即使全世界人都知道这样的一个君主是疯子。对于这样的一种情况，我也能理解为什么百姓无法接受他这种行为，毕竟大家不会设身处地地为Jimmy着想，不会想到他所处的环境和背景，一叶障目而心生恨意，但是又不会去真的用实际行动去对他赶尽杀绝，因为他又有贵族身份，这就是所谓的小人之道。&lt;/p&gt;
+&lt;p&gt;  至于三十而立，我觉得是面对世界，有傲骨而无傲气，坦然面对所有事情，有自己安身立命的本事，同时肩负着自己角色的使命，并以君子为目标去继续生活。&lt;/p&gt;
+&lt;p&gt;  当然，耳顺便是终极目标，韩信的胯下之辱，能够忍辱而负重，不以为心中负担而作为动力前行，是真正的智慧和勇气。&lt;/p&gt;
+&lt;p&gt;  又说道，仁者的勇气是能够直面过去和愧疚，一日三省，能坦然和淡定地面对生命中的遗憾，能接受这些遗憾，并用行动去弥补这些遗憾，便是大智大勇。&lt;/p&gt;
+&lt;p&gt;  仁者不忧，知者不惑，勇者不惧。&lt;/p&gt;
+&lt;p&gt;  2016，知己，习以仁德。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;  为什么读起了《论语》，因为偶然在市图书馆翻看《季羡林谈人生》，里面有说到耄耋之际一些古语，觉得很有韵味，而又很有道理。感觉最近需要一些智者来指点生活中的一二，又无从说起。“生活不如意有八九，与人言说二三”，心中的苦闷只有自己知道，而身边的朋友知道的只有皮毛而已，所以，还
+    
+    </summary>
+    
+    
+      <category term="读后感" scheme="http://yoursite.com/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mongodb--Make at least 3379MB available in /data/db/journal or use ...</title>
+    <link href="http://yoursite.com/2016/07/22/Mongodb-Make-at-least-3379MB-available-in-data-db-journal-or-use/"/>
+    <id>http://yoursite.com/2016/07/22/Mongodb-Make-at-least-3379MB-available-in-data-db-journal-or-use/</id>
+    <published>2016-07-22T06:39:59.000Z</published>
+    <updated>2016-07-22T06:40:36.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Error Code:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[root@cloud bin]# ./mongod&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2016-07-22T14:34:05.781+0800 I JOURNAL  [initandlisten] journal dir=/data/db/journal&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2016-07-22T14:34:05.782+0800 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2016-07-22T14:34:05.782+0800 I JOURNAL  [initandlisten] &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2016-07-22T14:34:05.782+0800 E JOURNAL  [initandlisten] Insufficient free space for journal files&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2016-07-22T14:34:05.782+0800 I JOURNAL  [initandlisten] Please make at least 3379MB available in /data/db/journal or use --smallfiles&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2016-07-22T14:34:05.782+0800 I JOURNAL  [initandlisten] &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2016-07-22T14:34:05.782+0800 I STORAGE  [initandlisten] exception in initAndListen: 15926 Insufficient free space for journals, terminating&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2016-07-22T14:34:05.782+0800 I CONTROL  [initandlisten] now exiting&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2016-07-22T14:34:05.783+0800 I NETWORK  [initandlisten] shutdown: going to close listening sockets...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2016-07-22T14:34:05.783+0800 I NETWORK  [initandlisten] removing socket file: /tmp/mongodb-27017.sock&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2016-07-22T14:34:05.783+0800 I NETWORK  [initandlisten] shutdown: going to flush diaglog...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2016-07-22T14:34:05.783+0800 I NETWORK  [initandlisten] shutdown: going to close sockets...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2016-07-22T14:34:05.783+0800 I STORAGE  [initandlisten] shutdown: waiting for fs preallocator...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2016-07-22T14:34:05.783+0800 I STORAGE  [initandlisten] shutdown: final commit...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2016-07-22T14:34:05.783+0800 I STORAGE  [initandlisten] shutdown: closing all files...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2016-07-22T14:34:05.784+0800 I STORAGE  [initandlisten] closeAllFiles() finished&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2016-07-22T14:34:05.784+0800 I CONTROL  [initandlisten] dbexit:  rc: 100&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Error Code:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/sp
+    
+    </summary>
+    
+    
+      <category term="MongoDB" scheme="http://yoursite.com/tags/MongoDB/"/>
+    
+  </entry>
   
   <entry>
     <title>PDF Expert老是崩溃</title>
@@ -85,12 +135,12 @@
     <link href="http://yoursite.com/2016/07/13/Pokemon-Go-%E6%94%BB%E7%95%A5%E5%8F%8A%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%AF%A6%E8%A7%A3/"/>
     <id>http://yoursite.com/2016/07/13/Pokemon-Go-攻略及一些常见问题详解/</id>
     <published>2016-07-13T06:43:24.000Z</published>
-    <updated>2016-07-15T07:48:38.000Z</updated>
+    <updated>2016-07-18T02:03:42.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;如何玩？&quot;&gt;&lt;a href=&quot;#如何玩？&quot; class=&quot;headerlink&quot; title=&quot;如何玩？&quot;&gt;&lt;/a&gt;如何玩？&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;你要有VPN&lt;/li&gt;
 &lt;li&gt;你要有Google账号&lt;/li&gt;
-&lt;li&gt;你要下载IOS GPS修改版客户端下载地址–&amp;gt; &lt;a href=&quot;http://pan.baidu.com/s/1i5HHFZB&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;点击下载&lt;/strong&gt;&lt;/a&gt; 密码：9ee5  通过电脑端同步助手或者itools安装，安装之后，在证书中点击信任就可以了&lt;/li&gt;
+&lt;li&gt;你要下载IOS GPS修改版客户端下载地址–&amp;gt; &lt;a href=&quot;http://pan.baidu.com/s/1i5HHFZB&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;点击下载&lt;/strong&gt;&lt;/a&gt; 密码：9ee5&lt;br&gt;通过电脑端同步助手或者itools安装，安装之后，在证书中点击信任就可以了&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&quot;GPS-signal-not-found&quot;&gt;&lt;a href=&quot;#GPS-signal-not-found&quot; class=&quot;headerlink&quot; title=&quot;GPS signal not found&quot;&gt;&lt;/a&gt;GPS signal not found&lt;/h1&gt;&lt;h2 id=&quot;中国地图锁区&quot;&gt;&lt;a href=&quot;#中国地图锁区&quot; class=&quot;headerlink&quot; title=&quot;中国地图锁区&quot;&gt;&lt;/a&gt;中国地图锁区&lt;/h2&gt;&lt;p&gt;因为Pokemon Go在中国地图锁区，如果是你自己的GPS信息的话，是会出现这个错误，并且打开软件一片荒芜  &lt;strong&gt;解决办法：&lt;/strong&gt;下载GPS修改版Pokemon Go, 下载地址–&amp;gt; &lt;a href=&quot;http://pan.baidu.com/s/1i5HHFZB&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;点击下载&lt;/strong&gt;&lt;/a&gt; 密码：9ee5  ，通过电脑端同步助手或者itools安装，安装之后，在证书中点击信任就可以了&lt;/p&gt;
 &lt;h2 id=&quot;在建筑物内&quot;&gt;&lt;a href=&quot;#在建筑物内&quot; class=&quot;headerlink&quot; title=&quot;在建筑物内&quot;&gt;&lt;/a&gt;在建筑物内&lt;/h2&gt;&lt;p&gt;在建筑物内，GPS信号会不好，可以出去走走，一会儿就有GPS信息了&lt;/p&gt;
@@ -412,9 +462,9 @@
     </summary>
     
     
-      <category term="error" scheme="http://yoursite.com/tags/error/"/>
-    
       <category term="hpux" scheme="http://yoursite.com/tags/hpux/"/>
+    
+      <category term="error" scheme="http://yoursite.com/tags/error/"/>
     
   </entry>
   
@@ -521,13 +571,13 @@
     </summary>
     
     
-      <category term="IBM" scheme="http://yoursite.com/tags/IBM/"/>
-    
       <category term="error" scheme="http://yoursite.com/tags/error/"/>
     
       <category term="AIX" scheme="http://yoursite.com/tags/AIX/"/>
     
       <category term="DS5300" scheme="http://yoursite.com/tags/DS5300/"/>
+    
+      <category term="IBM" scheme="http://yoursite.com/tags/IBM/"/>
     
   </entry>
   
@@ -571,131 +621,6 @@
     
     
       <category term="d3js" scheme="http://yoursite.com/tags/d3js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Scrapy下载中间件</title>
-    <link href="http://yoursite.com/2016/05/19/Scrapy%E4%B8%8B%E8%BD%BD%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
-    <id>http://yoursite.com/2016/05/19/Scrapy下载中间件/</id>
-    <published>2016-05-19T07:45:53.000Z</published>
-    <updated>2016-05-19T07:51:09.000Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;下载中间件功能&quot;&gt;&lt;a href=&quot;#下载中间件功能&quot; class=&quot;headerlink&quot; title=&quot;下载中间件功能&quot;&gt;&lt;/a&gt;下载中间件功能&lt;/h2&gt;&lt;p&gt;这是处于引擎和下载器之间的一层组件，可以有多个下载中间件被加载运行， 在引擎传递请求给下载器的过程中，下载中间件可以对请求进行处理 （例如增加http header信息等）， 在下载器完成http请求，传递响应给引擎的过程中， 下载中间件可以对响应进行处理（例如进行gzip的解压等）&lt;/p&gt;
-&lt;h2 id=&quot;Scrapy框架自带的下载中间件&quot;&gt;&lt;a href=&quot;#Scrapy框架自带的下载中间件&quot; class=&quot;headerlink&quot; title=&quot;Scrapy框架自带的下载中间件&quot;&gt;&lt;/a&gt;Scrapy框架自带的下载中间件&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;CookiesMiddleware 跟踪处理 cookie&lt;/li&gt;
-&lt;li&gt;DownloadTimeoutMiddleware 设置请求超时时间&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://scrapy-chs.readthedocs.io/zh_CN/0.24/topics/downloader-middleware.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;其他下载中间件&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;scrapy-下载中间件的开启情况&quot;&gt;&lt;a href=&quot;#scrapy-下载中间件的开启情况&quot; class=&quot;headerlink&quot; title=&quot;scrapy 下载中间件的开启情况&quot;&gt;&lt;/a&gt;scrapy 下载中间件的开启情况&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;查看 /usr/local/lib/python2.7/dist-packages/scrapy/settings/default_settings.py 默认配置文件，变量 DOWNLOADER_MIDDLEWARES_BASE 的定义&lt;/li&gt;
-&lt;li&gt;settings.py中有些中间件有开关参数，例如 COOKIES_ENABLED 控制 CookiesMiddleware 开启或关闭&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;开发下载中间件，丢弃响应数据长度等于100的数据&quot;&gt;&lt;a href=&quot;#开发下载中间件，丢弃响应数据长度等于100的数据&quot; class=&quot;headerlink&quot; title=&quot;开发下载中间件，丢弃响应数据长度等于100的数据&quot;&gt;&lt;/a&gt;开发下载中间件，丢弃响应数据长度等于100的数据&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;创建 middlewares 目录（与 settings.py 文件在同一目录下）&lt;/li&gt;
-&lt;li&gt;在目录下创建 mymiddlewares.py 文件，创建类 CustomMiddlewares，下载中间件的类继承自 scrapy.contrib.downloadermiddleware.DownloaderMiddleware&lt;/li&gt;
-&lt;li&gt;DownloaderMiddleware 主要提供如下的方法&lt;ol&gt;
-&lt;li&gt;process_request 在请求传递给下载器前可以处理请求对象&lt;/li&gt;
-&lt;li&gt;process_response 在响应传递给引擎前处理响应数据&lt;/li&gt;
-&lt;li&gt;process_exception 处理异步调用时发生的异常情况&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;在 mymiddlewares.py 文件中添加下面代码&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; scrapy.exceptions &lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; IgnoreRequest&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; scrapy.contrib.downloadermiddleware &lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; DownloaderMiddleware&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;CustomMiddlewares&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(DownloaderMiddleware)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;process_response&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(self, request, response, spider)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; len(response.body) == &lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; IgnoreRequest(&lt;span class=&quot;string&quot;&gt;&quot;body length == 100&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; response&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol&gt;
-&lt;li&gt;在配置文件中Settings.py中配置激活下载中间件&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;DOWNLOADER_MIDDLEWARES = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              &lt;span class=&quot;string&quot;&gt;&quot;zhihu.middlerwares.mymiddlewares.CustomMiddlewares&quot;&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;543&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;下载中间件功能&quot;&gt;&lt;a href=&quot;#下载中间件功能&quot; class=&quot;headerlink&quot; title=&quot;下载中间件功能&quot;&gt;&lt;/a&gt;下载中间件功能&lt;/h2&gt;&lt;p&gt;这是处于引擎和下载器之间的一层组件，可以有多个下载中间件被加载运行， 在引擎传递请求给下载器的过程中
-    
-    </summary>
-    
-    
-      <category term="scrapy downloadmidware" scheme="http://yoursite.com/tags/scrapy-downloadmidware/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MongoDB常用命令</title>
-    <link href="http://yoursite.com/2016/05/19/MongoDB%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://yoursite.com/2016/05/19/MongoDB常用命令/</id>
-    <published>2016-05-19T07:28:12.000Z</published>
-    <updated>2016-05-24T01:54:32.000Z</updated>
-    
-    <content type="html">&lt;ul&gt;
-&lt;li&gt;启动MongoDB&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;$mongod –fork –logpath=/data/log/r3.log&lt;br&gt;–fork 允许mongod后台运行，但是必须指定日志记录文件路径（Enables a daemon mode that runs the mongos process in the background.）&lt;br&gt;–logpath 指定日志记录文件路径&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;导出Collections&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;$mongoexport -d test -c user -o user.dat&lt;br&gt;-d 指定数据库&lt;br&gt;-c 指定collections&lt;br&gt;-o 指定输出文件名称&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;导出Collections为CSV格式&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;$mongoexport -d test -c user –csv -f uid,username,age -o user_csv.dat&lt;br&gt;-f 指明需要导出哪些列&lt;br&gt;—-csv 指明导出格式为CSV&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;导入Collections&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;$mongoimport -d test -c user user.dat&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;导入CSV文件&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;$mongoimport -d test -c user –type csv –headerline –file user_csv.dat&lt;br&gt;-type 指明要导入的文件格式&lt;br&gt;-headerline 批明不导入第一行,因为第一行是列名&lt;br&gt;-file 指明要导入的文件路径&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;数据库备份&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;$ mongodump -d test&lt;br&gt;2016-02-19T16:44:20.538+0800 writing test.things to&lt;br&gt;2016-02-19T16:44:20.538+0800 writing test.students to&lt;br&gt;2016-02-19T16:44:20.538+0800 writing test.fs.chunks to&lt;br&gt;2016-02-19T16:44:20.538+0800 writing test.thins to&lt;br&gt;2016-02-19T16:44:20.539+0800 done dumping test.thins (9 documents)&lt;br&gt;2016-02-19T16:44:20.539+0800 done dumping test.things (20 documents)&lt;br&gt;2016-02-19T16:44:20.540+0800 done dumping test.students (8 documents)&lt;br&gt;2016-02-19T16:44:20.540+0800 writing test.user to&lt;br&gt;2016-02-19T16:44:20.540+0800 writing test.fs.files to&lt;br&gt;2016-02-19T16:44:20.540+0800 writing test.students_res to&lt;br&gt;2016-02-19T16:44:20.541+0800 done dumping test.fs.files (1 document)&lt;br&gt;2016-02-19T16:44:20.541+0800 done dumping test.students_res (1 document)&lt;br&gt;2016-02-19T16:44:20.541+0800 done dumping test.user (2 documents)&lt;br&gt;2016-02-19T16:44:20.544+0800 done dumping test.fs.chunks (5 documents)&lt;br&gt;也可以加入-o path_to_dump来指定备份的目录&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;数据库恢复&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;$ mongorestore -d test dump/&lt;em&gt;&lt;br&gt;*&lt;/em&gt;如果想恢复数据库，可以不用先删除数据库，可以在命令后面加入-drop来删除表，然后再想表中插入数据&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;查看数据库正在做什么&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;db.currentOp();&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;创建数据库&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;MongoDB没有创建数据库的命令，可以直接使用use test来创建test数据库&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;创建Collcetion&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;db.createCollection(“questions”);&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;MongoDB实时监控&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;此工具可以快速的查看某组运行中的 MongoDB 实例的统计信息&lt;br&gt;$mongostat&lt;br&gt;insert: 每秒插入量&lt;br&gt;query: 每秒查询量&lt;br&gt;update: 每秒更新量&lt;br&gt;delete: 每秒删除量&lt;br&gt;locked: 锁定量&lt;br&gt;qr | qw: 客户端查询排队长度(读|写)&lt;br&gt;ar | aw: 活跃客户端量(读|写)&lt;br&gt;conn: 连接数 time: 当前时间&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;删除重复数据，建立索引(MongoDB 2.x)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;coll.ensureIndex({productid:1}) // 在productid上建立普通索引&lt;br&gt;coll.ensureIndex({district:1, plate:1}) // 多字段索引&lt;br&gt;coll.ensureIndex({productid:1}, {unique:true}) // 唯一索引&lt;br&gt;coll.ensureIndex({productid:1}, {unique:true, dropDups:true}) // 建索引时，如果遇到索引字段值已经出现过的情况，则删除重复记录&lt;br&gt;coll.getIndexes() // 查看索引&lt;br&gt;coll.dropIndex({productid:1}) // 删除单个索&lt;/p&gt;
-&lt;p&gt;db.users.dropIndex({uid:1});&lt;br&gt;db.users.ensureIndex({uid:1, name:1}, {unique:true, dropDups:true});&lt;br&gt;db.zhihu.ensureIndex({qid:1}, {unique:true});&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;删除collection&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;db.collection.drop()&lt;br&gt;example: db.students.drop()&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;启动MongoDB&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;$mongod –fork –logpath=/data/log/r3.log&lt;br&gt;–fork 允许mongod后台运行，但是必须指定日志记录文件路径（Enables a daemon mode that run
-    
-    </summary>
-    
-    
-      <category term="MonogDB" scheme="http://yoursite.com/tags/MonogDB/"/>
     
   </entry>
   
