@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-09-08T15:52:35.000Z</updated>
+  <updated>2017-01-05T15:01:58.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试！</title>
+    <link href="http://yoursite.com/2017/01/05/%E6%B5%8B%E8%AF%95%EF%BC%81/"/>
+    <id>http://yoursite.com/2017/01/05/测试！/</id>
+    <published>2017-01-05T15:01:58.000Z</published>
+    <updated>2017-01-05T15:01:58.000Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Centos6.4 SSH连接断开问题</title>
+    <link href="http://yoursite.com/2016/10/04/Centos6-4-SSH%E8%BF%9E%E6%8E%A5%E6%96%AD%E5%BC%80%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2016/10/04/Centos6-4-SSH连接断开问题/</id>
+    <published>2016-10-04T02:26:57.000Z</published>
+    <updated>2016-10-04T02:47:49.000Z</updated>
+    
+    <content type="html">&lt;p&gt;修改 /etc/ssh/sshd_config&lt;br&gt;ClientAliveInterval 60&lt;/p&gt;
+&lt;p&gt;然后重启sshd服务&lt;br&gt;service sshd restart&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;修改 /etc/ssh/sshd_config&lt;br&gt;ClientAliveInterval 60&lt;/p&gt;
+&lt;p&gt;然后重启sshd服务&lt;br&gt;service sshd restart&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>论语之道</title>
@@ -462,9 +500,9 @@
     </summary>
     
     
-      <category term="hpux" scheme="http://yoursite.com/tags/hpux/"/>
-    
       <category term="error" scheme="http://yoursite.com/tags/error/"/>
+    
+      <category term="hpux" scheme="http://yoursite.com/tags/hpux/"/>
     
   </entry>
   
@@ -543,84 +581,6 @@
       <category term="virtualenv" scheme="http://yoursite.com/tags/virtualenv/"/>
     
       <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>DS5300 Lose path redundancy错误解决</title>
-    <link href="http://yoursite.com/2016/05/20/DS5300-Lose-path-redundancy%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3/"/>
-    <id>http://yoursite.com/2016/05/20/DS5300-Lose-path-redundancy错误解决/</id>
-    <published>2016-05-20T03:46:07.000Z</published>
-    <updated>2016-05-20T03:57:31.000Z</updated>
-    
-    <content type="html">&lt;p&gt;客户报错误，登录DS5300，默认IP为（192.168.128.1/129.1），操作的时候最好谅解两个控制器&lt;br&gt;查看ESM,SFP状态，发现是Enclosure 2 path redundancy丢失，查看ESM状态，发现SFP以及ESM状态都OK。&lt;br&gt;错误日志为：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Description: Drive expansion enclosure path redundancy lost&lt;br&gt;查看扩展柜后的亮灯情况，Enclosure 2 的两个光纤模块口都灭灯，正常为常量绿灯。&lt;br&gt;怀疑是SFP模块或者ESM有问题。&lt;br&gt;申请备件SFP和ESM模块&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;首先尝试更换SFP模块，无效&lt;/li&gt;
-&lt;li&gt;尝试更换ESM模块，没有微码，发回公司升级微码，重新安装之后，重启控制器 ok&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;日志为：&lt;a href=&quot;http://7xr6vh.com1.z0.glb.clouddn.com/hfcc_ds53_04VH.zip&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;all support data&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;客户报错误，登录DS5300，默认IP为（192.168.128.1/129.1），操作的时候最好谅解两个控制器&lt;br&gt;查看ESM,SFP状态，发现是Enclosure 2 path redundancy丢失，查看ESM状态，发现SFP以及ESM状态都OK。&lt;br&gt;错误日志
-    
-    </summary>
-    
-    
-      <category term="error" scheme="http://yoursite.com/tags/error/"/>
-    
-      <category term="AIX" scheme="http://yoursite.com/tags/AIX/"/>
-    
-      <category term="DS5300" scheme="http://yoursite.com/tags/DS5300/"/>
-    
-      <category term="IBM" scheme="http://yoursite.com/tags/IBM/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>开始使用D3JS作图</title>
-    <link href="http://yoursite.com/2016/05/19/%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8D3JS%E4%BD%9C%E5%9B%BE/"/>
-    <id>http://yoursite.com/2016/05/19/开始使用D3JS作图/</id>
-    <published>2016-05-19T08:29:01.000Z</published>
-    <updated>2016-05-20T03:46:13.000Z</updated>
-    
-    <content type="html">&lt;ul&gt;
-&lt;li&gt;Install a light webserver &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;npm install -g http-server&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Install topojson &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;npm install -g topojson&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Clone the sample code with included libraries &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;git clone --depth=1 git@github.com:climboid/d3jsMaps.git&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;start the project &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;cd d3jsMaps&lt;/code&gt;&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ProfeelsMacBook-Pro:d3jsMaps wangqi$ http-server&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Starting up http-server, serving ./&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Available on:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  http://127.0.0.1:8080&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  http://10.253.245.151:8080&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Hit CTRL-C to stop the server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;Install a light webserver &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;npm install -g http-server&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Install topojson &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code
-    
-    </summary>
-    
-    
-      <category term="d3js" scheme="http://yoursite.com/tags/d3js/"/>
     
   </entry>
   
